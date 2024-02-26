@@ -1,0 +1,116 @@
+{
+    "events": [
+      {
+        "name": "BOTATHON",
+        "type": "TECHNICAL",
+        "teams": 10,
+        "members_per_team": 3,
+        "rounds": 2,
+        "prizes": {
+          "1st": 3000,
+          "2nd": 2000
+        },
+        "round_details": [
+          {
+            "name": "PRELIMS",
+            "type": "ONLINE",
+            "details": [
+              "Each team must submit a real-world scenario-based problem statement",
+              "Propose an automation solution",
+              "Discuss potential impact in a PPT Presentation"
+            ]
+          },
+          {
+            "name": "FINALS",
+            "type": "BOT EXPO",
+            "details": [
+              "Showcase bots",
+              "Demonstrate automation solution implementation",
+              "Deploy automation solutions and present them during the event"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "RED BREAK GREEN",
+        "type": "TECHNICAL",
+        "teams": 10,
+        "members_per_team": 2,
+        "rounds": 2,
+        "prizes": {
+          "1st": 2000,
+          "2nd": 1000
+        },
+        "rules": [
+          "FIND THE LANGUAGE+ CLONE THE SITE",
+          "Red and green ribbon coding challenge"
+        ],
+        "judging_criteria": [
+          {
+            "round": "PRELIMS",
+            "criteria": "Cumulative points from correctly answered questions and the best clone of the given site"
+          },
+          {
+            "round": "FINALS",
+            "criteria": "Points based on dedication shown while coding; Event Incharges oversee rules adherence and dispute resolution"
+          }
+        ]
+      },
+      {
+        "name": "E-SPORT",
+        "type": "NON-TECHNICAL",
+        "teams": 10,
+        "members_per_team": 2,
+        "rounds": 2,
+        "prizes": {
+          "1st": 2000,
+          "2nd": 1000
+        },
+        "rules": [
+          "DUO CLASSIC",
+          "TDM clash with specific rules (M416 only, no pistol, slide off)"
+        ]
+      },
+      {
+        "name": "IPL AUCTION",
+        "type": "NON-TECHNICAL",
+        "teams": 10,
+        "members_per_team": 2,
+        "rounds": 2,
+        "prizes": {
+          "1st": 2000,
+          "2nd": 1000
+        },
+        "round_details": [
+          {
+            "name": "PRELIMS",
+            "type": "CLASSIC QUIZ",
+            "details": [
+              "General quiz",
+              "Top 10 teams proceed to the final round"
+            ]
+          },
+          {
+            "name": "FINALS",
+            "type": "IPL AUCTION",
+            "details": [
+              "Budget of 100 crore rupees",
+              "Select 18 to 25 players with specific composition",
+              "Calculate total points for all players; Team with highest points wins"
+            ]
+          }
+        ],
+        "judging_criteria": [
+          {
+            "round": "PRELIMS",
+            "criteria": "Cumulative points from correctly answered questions"
+          },
+          {
+            "round": "FINALS",
+            "criteria": "Total points for all players in each team; Team with highest points declared the winner"
+          }
+        ]
+      }
+    ]
+  }
+  
