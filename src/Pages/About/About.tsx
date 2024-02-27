@@ -108,7 +108,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="container grid max-w-5xl gap-6 px-4 py-8 md:grid-cols-2 md:py-12 lg:gap-10 md:flex md:flex-row-reverse">
+      <div className="container grid max-w-5xl gap-6 px-4 py-8 md:grid-cols-2 md:py-12 lg:gap-10  md:flex-row-reverse">
         <div className="space-y-4">
           <p className="text-gray-500 md:text-base/relaxed lg:text-xl/relaxed dark:text-gray-400">
             Embark on a journey through cutting-edge technology and exhilarating

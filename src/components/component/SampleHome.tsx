@@ -73,7 +73,7 @@ export function SampleHome() {
                     </div>
                   </div>
                   <CardFooter>
-                    <Link className="font-semibold underline underline-offset-2" href="#">
+                    <Link className="font-semibold underline underline-offset-2" to="#">
                       Register now
                     </Link>
                   </CardFooter>
@@ -100,7 +100,7 @@ export function SampleHome() {
                     </div>
                   </div>
                   <CardFooter>
-                    <Link className="font-semibold underline underline-offset-2" href="#">
+                    <Link className="font-semibold underline underline-offset-2" to="#">
                       Register now
                     </Link>
                   </CardFooter>
