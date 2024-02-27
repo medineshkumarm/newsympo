@@ -69,7 +69,7 @@ export function SampleHome() {
                     />
                     <div className="space-y-2">
                       <h3 className="text-2xl font-bold tracking-tight">
-                        Non-Technical Events
+                        Technical Events
                       </h3>
                       <p className="text-gray-500 dark:text-gray-400">
                         A celebration of music, art, and community under the

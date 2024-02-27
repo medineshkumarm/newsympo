@@ -13,7 +13,7 @@ export default function Botathon() {
               BOT-A-THON: Automation Challenge
             </h1>
             <p className="mx-auto max-w-[600px] text-gray-200 md:text-lg lg:text-xl xl:text-2xl dark:text-gray-400">
-              Join us in BOT-A-THON, an automation challenge where teams of two
+              Join us in BOT-A-THON, an automation challenge where teams of three
               participants will compete to solve real-world problems through
               innovative automation solutions.
             </p>
@@ -23,13 +23,13 @@ export default function Botathon() {
               <div className="space-y-4 text-left">
                 <h3 className="font-bold">Event Details</h3>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Prelims Date: 6th March,2024
+                  Prelims Date: 6th March,2024 (6pm - 7pm)
                 </p>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Finals Date: 09-03-2024
+                  Finals Date: 09-03-2024 (8am - 11:30 am)
                 </p>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Venue: TBD
+                  Venue: CSE Block-I AV Hall
                 </p>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
                   Team composition: Team of 3 members
@@ -38,7 +38,7 @@ export default function Botathon() {
             </div>
             <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8  bg-gradient-to-r from-green-800 to-teal-800 text-white">
               <div className="space-y-4 text-left">
-                <h3 className="font-bold">Round 1: Idea Summit</h3>
+                <h3 className="font-bold">Round 1: Idea Summit(Online)</h3>
                 <ol className="list-decimal pl-6">
                   <li>
                     Each team must submit a real-world scenario-based problem
@@ -57,7 +57,7 @@ export default function Botathon() {
             </div>
             <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8 bg-gradient-to-r from-green-800 to-teal-800 text-white">
               <div className="space-y-4 text-left">
-                <h3 className="font-bold">Round 2: Bot Expo</h3>
+                <h3 className="font-bold">Round 2: Bot Expo(Offline)</h3>
                 <ol className="list-decimal pl-6">
                   <li>Selected teams will showcase their bots.</li>
                   <li>

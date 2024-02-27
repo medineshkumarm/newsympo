@@ -5,7 +5,7 @@ export default function RPG() {
   return (
     <>
       <Navbar />
-      <div className="pt-10"></div>
+      <div className="pt-12"></div>
       <section className="w-full py-8 md:py-16 lg:py-20 bg-eve text-white">
         <div className="container px-4 flex flex-col items-center gap-4 text-center md:gap-8 md:px-6">
           <div className="space-y-4 md:space-y-6">
@@ -25,10 +25,10 @@ export default function RPG() {
               <div className="space-y-4 text-left">
                 <h3 className="font-bold">Event Details</h3>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Prelims Date: 7th March
+                  Prelims Date: 7th March (6pm - 7pm)
                 </p>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Final Date: 9th March
+                  Final Date: 9th March (8am - 11:30pm)
                 </p>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
                   Venue: Computer Center II
@@ -42,11 +42,17 @@ export default function RPG() {
             {/** Round 1: Online Prelims */}
             <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8 bg-gradient-to-r from-green-800 to-teal-800 text-white">
               <div className="space-y-4 text-left">
-                <h3 className="font-bold">Round 1: Online Prelims</h3>
-                <p>
-                  <strong>Final Name & Rules:</strong> FIND THE LANGUAGE+ CLONE
-                  THE SITE.
-                </p>
+                <h3 className="font-bold">
+                  Round 1:{" "}
+                  <strong> FIND THE LANGUAGE+ CLONE THE SITE (Online)</strong>s
+                </h3>
+                {/* <p>
+                  
+                </p> */}
+                <h4>
+                  <strong>Rules</strong>
+                </h4>
+
                 <ul className="list-disc pl-6">
                   <li>
                     Participants identify programming languages through a series
@@ -68,10 +74,12 @@ export default function RPG() {
             {/** Round 2: Offline Finals */}
             <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8 bg-gradient-to-r from-green-800 to-teal-800 text-white">
               <div className="space-y-4 text-left">
-                <h3 className="font-bold">Round 2: Offline Finals</h3>
-                <p>
-                  <strong>Final Name & Rules:</strong> Swap the Coders
-                </p>
+                <h3 className="font-bold">
+                  Round 2: <strong>Swap the Coders(Offline)</strong>
+                </h3>
+                <h4>
+                  <strong>Rules</strong>
+                </h4>
                 <ul className="list-disc pl-6">
                   <li>
                     Teams of two members collaborate, alternating roles every 5
@@ -83,14 +91,6 @@ export default function RPG() {
                   </li>
                   <li>Teams solve problems using an online compiler.</li>
                 </ul>
-                {/* <h4 className="font-bold">Judging Criteria:</h4>
-                <ul className="list-disc pl-6">
-                  <li>Scoring based on code completion.</li>
-                  <li>
-                    Winners selected based on the highest cumulative score or
-                    more tasks completed.
-                  </li>
-                </ul> */}
               </div>
             </div>
           </div>
@@ -143,15 +143,15 @@ export default function RPG() {
               For any inquiries or clarifications, please feel free to reach out
               to our event coordinators:
             </p>
-            <div className="flex gap-[4rem]">
-              <ul className=" list-disc pl-6">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-[4rem]">
+              <ul className=" text-xl pl-6">
                 <h1>
                   <strong>Student Co-ordinators</strong>
                 </h1>
                 <li>Saravanapriya T - 93454 61987</li>
                 <li>Sumitha k 7604976100</li>
               </ul>
-              <ul className="list-disc pl-6">
+              <ul className="text-xl pl-6">
                 <h1>
                   <strong>Staff Co-ordinators</strong>
                 </h1>

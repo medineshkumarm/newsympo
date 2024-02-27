@@ -79,7 +79,7 @@ const Schedule: React.FC = () => {
       venue: "CSE BLOCK- I AV HALL",
     },
     {
-      name: "IPL",
+      name: "PEC's IPL AUCTION",
       prelims: "7th March 2024 (5pm - 7pm)",
       mains: "9th March 2024 (8am - 11:30am)",
       venue: "CSE BLOCK- III AV HALL",

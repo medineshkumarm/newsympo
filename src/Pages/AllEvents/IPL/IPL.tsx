@@ -5,13 +5,13 @@ export default function IPL() {
   return (
     <>
       <Navbar />
-      <div className="pt-10"></div>
+      <div className="pt-12"></div>
 
       <section className="w-full py-8 md:py-16 lg:py-20 bg-eve text-white">
         <div className="container px-4 flex flex-col items-center gap-4 text-center md:gap-8 md:px-6">
           <div className="space-y-4 md:space-y-6">
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl neon font-bold tracking-tight text-white">
-              IPL AUCTION: Cricket Quiz & Virtual Bidding
+              PEC's IPL AUCTION
             </h1>
             <p className="mx-auto max-w-[600px] text-gray-300 md:text-lg lg:text-xl xl:text-2xl dark:text-gray-400">
               Participate in the IPL AUCTION event, a combination of cricket
@@ -44,8 +44,10 @@ export default function IPL() {
             {/* Round 1: Online Prelims */}
             <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8 bg-gradient-to-r from-green-800 to-teal-800 text-white">
               <div className="space-y-4 text-left">
-                <h3 className="font-bold">Round 1: Online Prelims</h3>
-                <p>Final Name & Rule: CRIC - QUIZ</p>
+                <h3 className="font-bold">Round 1:CRIC - QUIZ(Online)</h3>
+                <p>
+                  <strong>Rules:</strong>
+                </p>
                 <ul className="list-disc pl-6">
                   <li>
                     Engage in a dynamic online cricket quiz featuring 20
@@ -62,8 +64,12 @@ export default function IPL() {
             {/* Round 2: Offline Finals */}
             <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8 bg-gradient-to-r from-green-800 to-teal-800 text-white">
               <div className="space-y-4 text-left">
-                <h3 className="font-bold">Round 2: Offline Finals</h3>
-                <p>Final Name & Rules: IPL AUCTION</p>
+                <h3 className="font-bold">
+                  Round 2: PEC's IPL AUCTION(Offline)
+                </h3>
+                <p>
+                  <strong>Rules:</strong>{" "}
+                </p>
                 <ul className="list-disc pl-6">
                   <li>
                     Each team is given a budget of 50 crore rupees for the final
@@ -78,73 +84,6 @@ export default function IPL() {
               </div>
             </div>
           </div>
-
-          {/* Judging Criteria Section */}
-          {/* <section className="w-full py-8 md:py-16 lg:py-20 bg-eve text-white">
-            <div className="container px-4">
-              <div className="space-y-6 prose prose-gray prose-lg dark:prose-dark">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold tracking-tight">
-                  Judging Criteria
-                </h2>
-
-                <div className="judging-round">
-                  <h3 className="round-title">Round 1:</h3>
-                  <ul className="list-none pl-6">
-                    <li>
-                      Cumulative points from correctly answered questions.
-                    </li>
-                    <li>
-                      In the event of a tie, priority is given to the team that
-                      completed the quiz first.
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="judging-round">
-                  <h3 className="round-title">Round 2:</h3>
-                  <ul className="list-none pl-6">
-                    <li>
-                      The total points for all players in each team are
-                      calculated, and the team with the highest points is
-                      declared the winner of the event.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section> */}
-
-          {/* Contact Section */}
-          {/* <section className="w-full py-8 md:py-16 lg:py-20 bg-eve text-white">
-            <div className="container px-4">
-              <div className="space-y-6 prose prose-gray prose-lg dark:prose-dark">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold tracking-tight">
-                  Contact
-                </h2>
-                <p className="text-lg lg:text-xl xl:text-2xl">
-                  For any inquiries or clarifications, please feel free to reach
-                  out to our event coordinators:
-                </p>
-                <div className="flex gap-[4rem] justify-center text-left">
-                  <ul className="list-disc pl-6">
-                    <h1>
-                      <strong>Student Co-ordinators</strong>
-                    </h1>
-                    <li>Laxman R U - 9025542112</li>
-                    <li>Rajkumar B - 9345813634</li>
-                  </ul>
-
-                  <ul className="list-disc pl-6">
-                    <h1>
-                      <strong>Staff Co-ordinators</strong>
-                    </h1>
-                    <li>Dr.S.Balaji - 9176982281</li>
-                    <li>Dr.P.J.Sathish kumar - 9962723582</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section> */}
         </div>
       </section>
       <section className="w-full py-8 md:py-16 lg:py-20 bg-eve text-white">
@@ -154,18 +93,23 @@ export default function IPL() {
               Judging Criteria
             </h2>
             <ol className="list-decimal pl-6">
-              <h3>Round 1</h3>
+              <h3>
+                <strong>Round 1</strong>
+              </h3>
               <li>Cumulative points from correctly answered questions.</li>
               <li>
                 In the event of a tie, priority is given to the team that
                 completed the quiz first..
               </li>
-
-              <h3>Round 2</h3>
+            </ol>
+            <ol className="list-decimal pl-6">
+              <h3>
+                <strong>Round 2</strong>
+              </h3>
               <li>
-              The total points for all players in each team are
-                      calculated, and the team with the highest points is
-                      declared the winner of the event.
+                The total points for all players in each team are calculated,
+                and the team with the highest points is declared the winner of
+                the event.
               </li>
             </ol>
             <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
@@ -178,19 +122,7 @@ export default function IPL() {
             <p className="text-lg lg:text-xl xl:text-2xl">
               E-certificates will be provided to all the participants.
             </p>
-            {/* <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-              General Guidelines
-            </h2>
-            <ol className="list-decimal pl-6">
-              <li>
-                All participants must adhere to the college's code of conduct
-                and maintain professional behavior throughout the event.
-              </li>
-              <li>
-                Any changes in the rules or schedule will be communicated to the
-                participants in advance.
-              </li>
-            </ol> */}
+
             <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
               Contact
             </h2>
@@ -198,15 +130,15 @@ export default function IPL() {
               For any inquiries or clarifications, please feel free to reach out
               to our event coordinators:
             </p>
-            <div className="flex gap-[4rem]">
-              <ul className=" list-disc pl-6">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-[4rem]">
+              <ul className="text-xl pl-6">
                 <h1>
                   <strong>Student Co-ordinators</strong>
                 </h1>
                 <li>Lingeshwaran B - 73387 19242</li>
                 <li>Ramkumar M - 6369292113</li>
               </ul>
-              <ul className="list-disc pl-6">
+              <ul className="text-xl pl-6">
                 <h1>
                   <strong>Staff Co-ordinators</strong>
                 </h1>
