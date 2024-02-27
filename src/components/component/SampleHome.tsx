@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { Carousel } from "../ui/carousel";
-import '../../Pages/pages.css';
-import tech from '/img/tech-img.png'
-import { CardFooter, Card } from "@/components/ui/card"
-import ntech from '/img/non-tech.png'
+import "../../Pages/pages.css";
+import tech from "/img/tech-img.png";
+import { CardFooter, Card } from "@/components/ui/card";
+import ntech from "/img/non-tech.png";
 export function SampleHome() {
   return (
     <div className="flex flex-col min-h-[100dvh]  bg-gradient-text-white">
@@ -15,9 +15,11 @@ export function SampleHome() {
                 Welcome to the Xerone
               </h1>
               <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 ">
-                Welcome to Xerone 2K24 Symposium, where innovation meets inspiration in a fusion of technical prowess and non-technical excitement!
-                Embark on a journey through cutting-edge technology and exhilarating competition as we present a diverse set of events designed to challenge and entertain.
-
+                Welcome to Xerone 2K24 Symposium, where innovation meets
+                inspiration in a fusion of technical prowess and non-technical
+                excitement! Embark on a journey through cutting-edge technology
+                and exhilarating competition as we present a diverse set of
+                events designed to challenge and entertain.
               </p>
               {/* <h2>
                 <strong className="sm:text-xs md:text-xl space-x-1">
@@ -66,14 +68,20 @@ export function SampleHome() {
                       width="440"
                     />
                     <div className="space-y-2">
-                      <h3 className="text-2xl font-bold tracking-tight">Non-Technical Events</h3>
+                      <h3 className="text-2xl font-bold tracking-tight">
+                        Non-Technical Events
+                      </h3>
                       <p className="text-gray-500 dark:text-gray-400">
-                        A celebration of music, art, and community under the stars.
+                        A celebration of music, art, and community under the
+                        stars.
                       </p>
                     </div>
                   </div>
                   <CardFooter>
-                    <Link className="font-semibold underline underline-offset-2" to="#">
+                    <Link
+                      className="font-semibold underline underline-offset-2"
+                      to="/register"
+                    >
                       Register now
                     </Link>
                   </CardFooter>
@@ -93,14 +101,20 @@ export function SampleHome() {
                       width="440"
                     />
                     <div className="space-y-2">
-                      <h3 className="text-2xl font-bold tracking-tight">Non-Technical Events</h3>
+                      <h3 className="text-2xl font-bold tracking-tight">
+                        Non-Technical Events
+                      </h3>
                       <p className="text-gray-500 dark:text-gray-400">
-                        A celebration of music, art, and community under the stars.
+                        A celebration of music, art, and community under the
+                        stars.
                       </p>
                     </div>
                   </div>
                   <CardFooter>
-                    <Link className="font-semibold underline underline-offset-2" to="#">
+                    <Link
+                      className="font-semibold underline underline-offset-2"
+                      to="#"
+                    >
                       Register now
                     </Link>
                   </CardFooter>
@@ -116,24 +130,23 @@ export function SampleHome() {
             </div>
           </div>
         </section>
-        <div className="grid grid-cols-2 m-0 p-0">
+        <div className="grid grid-cols-2  sm:grid-cols-1 m-0 p-0">
           <section className="w-full py-12 md:py-24 lg:py-32 border-t">
             <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
               <div className="space-y-3">
                 <h2 className="neon text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  Schedule
+                  Event Closing Soon!
                 </h2>
                 <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Don't miss out on the symposium's sessions and workshops.
-                  Check the full schedule.
+                  Hurry up! Event is closes on March 5th, 2024 at 5pm.
                 </p>
               </div>
               <div className="flex justify-center gap-4 md:gap-6">
                 <Link
                   className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-                  to="/about"
+                  to="/events"
                 >
-                  View Schedule
+                  Participate Now
                 </Link>
               </div>
             </div>
@@ -162,7 +175,6 @@ export function SampleHome() {
           </section>
         </div>
       </main>
-
     </div>
   );
 }

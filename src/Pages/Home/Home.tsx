@@ -1,6 +1,8 @@
 ("use client");
 import Footer from "../../UI/Footer";
 import vid from "/video/introd.mp4";
+import vid1 from "/video/about.mp4";
+
 import Navbar from "../..//UI/NavBar";
 import "./Home.css";
 // import { Carousels } from "@/UI/Carousels";
@@ -16,7 +18,6 @@ function Home() {
         <SampleHome />
         <Footer />
       </div>
-      
     </>
   );
 }
@@ -28,7 +29,7 @@ function BG2() {
     <div className="relative h-screen">
       {/* Video Background */}
       <video
-        className="w-full h-5/6 object-cover absolute top-0 left-0"
+        className="w-full h-5/6 object-cover absolute top-0 left-0 hidden sm:block" // Hidden on mobile
         autoPlay
         muted
         loop
@@ -36,9 +37,20 @@ function BG2() {
         <source src={vid} type="video/mp4" />
       </video>
 
+      {/* Mobile Video Background */}
+      <video
+        className="w-full h-5/6  aspect-auto absolute top-0 left-0 block sm:hidden -mt-1" // Displayed only on mobile
+        autoPlay
+        muted
+        loop
+        playsInline // For autoplay on mobile
+      >
+        <source src={vid1} type="video/mp4" />
+      </video>
+
       {/* Overlay Content */}
       <div className="absolute p-3 inset-0 flex flex-col items-center text-white blurit">
-        <div className="mt-auto -mb-8  sm:-mb-4 w-full  ">
+        <div className="mt-auto -mb-8 sm:-mb-4 w-full  ">
           {/* Move Countdown to the bottom */}
           <CountDown />
         </div>

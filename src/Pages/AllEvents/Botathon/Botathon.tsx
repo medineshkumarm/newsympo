@@ -1,8 +1,12 @@
 import "../styles.css";
+import Navbar from "@/UI/NavBar";
+import Footer from "@/UI/Footer";
 export default function Botathon() {
   return (
     <>
-       <section className="w-full py-8 md:py-16 lg:py-20 bg-eve text-white">
+      <Navbar />
+      <div className="pt-10"></div>
+      <section className="w-full py-8 md:py-16 lg:py-20 bg-eve text-white">
         <div className="container px-4 flex flex-col items-center gap-4 text-center md:gap-8 md:px-6">
           <div className="space-y-4 md:space-y-6">
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl neon font-bold tracking-tight">
@@ -65,7 +69,8 @@ export default function Botathon() {
                     present them during the finals.
                   </li>
                   <li>
-                  Students should bring their own laptops with uipath studio installed 
+                    Students should bring their own laptops with uipath studio
+                    installed
                   </li>
                 </ol>
               </div>
@@ -89,7 +94,7 @@ export default function Botathon() {
             </h2>
             <ul className="list-disc pl-6">
               <li>1st Prize: Rs.3000/-</li>
-              <li>2nd Prize: Rs.1000/-</li>
+              <li>2nd Prize: Rs.2000/-</li>
             </ul>
             <p className="text-lg lg:text-xl xl:text-2xl">
               E-certificates will be provided to all the participants.
@@ -115,20 +120,25 @@ export default function Botathon() {
               to our event coordinators:
             </p>
             <div className="flex gap-[4rem]">
-            <ul className=" list-disc pl-6">
-              <h1><strong>Student Co-ordinators</strong></h1>
-              <li>Laxman R U - 9025542112</li>
-              <li>Rajkumar B - 9345813634</li>
-            </ul>
-            <ul className="list-disc pl-6">
-              <h1><strong>Staff Co-ordinators</strong></h1>
-              <li>Dr.S.Balaji - 9176982281</li>
-              <li>Dr.P.J.Sathish kumar - 9962723582</li>
-            </ul>
+              <ul className=" list-disc pl-6">
+                <h1>
+                  <strong>Student Co-ordinators</strong>
+                </h1>
+                <li>Laxman R U - 9025542112</li>
+                <li>Rajkumar B - 9345813634</li>
+              </ul>
+              <ul className="list-disc pl-6">
+                <h1>
+                  <strong>Staff Co-ordinators</strong>
+                </h1>
+                <li>Dr.S.Balaji - 9176982281</li>
+                <li>Dr.P.J.Sathish kumar - 9962723582</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

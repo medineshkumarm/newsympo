@@ -35,7 +35,7 @@ const Navbar = () => {
                   <ListItem NavLink="/events">Events</ListItem>
                   <ListItem NavLink="/about">About</ListItem>
                   {/* <ListItem NavLink="/contact">Contact</ListItem> */}
-                  <ListItem NavLink="/register">Register</ListItem>
+                  <ListItem NavLink="/register" className="bg-yellow-500 text-white  hover:bg-black hover:text-white">Register</ListItem>
                 </ul>
               </nav>
             </div>

@@ -1,8 +1,8 @@
-import icon from '/img/pec-logo.png';
+import icon from "/img/pec-logo.png";
 const Footer = () => {
   return (
     <>
-      <footer className="relative z-10 bg-dark pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px] ">
+      <footer className="relative z-10 bg-black text-white pb-10 pt-5 dark:bg-dark lg:pb-20 lg:pt-[120px] ">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
@@ -21,7 +21,8 @@ const Footer = () => {
                   />
                 </a>
                 <p className="mb-7 text-base text-body-color dark:text-dark-6">
-                Bangalore Trunk Road, Varadharajapuram, Poonamallee, Chennai – 600 123
+                  Bangalore Trunk Road, Varadharajapuram, Poonamallee, Chennai –
+                  600 123
                 </p>
                 <p className="flex items-center text-sm font-medium text-dark dark:text-white">
                   <span className="mr-3 text-primary">
@@ -61,14 +62,14 @@ const Footer = () => {
             <LinkGroup header="STUDENT COMMITTEE">
               <NavLink link="/#" label="S EASHVAR - 9150190932" />
               <NavLink link="/#" label="VATTURI HARSHITHA - 8680005999" />
-     
             </LinkGroup>
             <LinkGroup header="FACULTY COORDINATORS">
-              <NavLink link="/#" label="Mrs. S.T.SANTHANALAKSHMI - 89392 75959"/>
+              <NavLink
+                link="/#"
+                label="Mrs. S.T.SANTHANALAKSHMI - 89392 75959"
+              />
               {/* <NavLink link="/#" label="Name2:" /> */}
-        
             </LinkGroup>
-           
 
             <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
               <div className="mb-10 w-full">
@@ -76,7 +77,6 @@ const Footer = () => {
                   Follow Us On
                 </h4>
                 <div className="mb-6 flex items-center">
-                  
                   {/* facebook */}
                   {/* <a
                     href="javascript:void(0)"
@@ -204,7 +204,10 @@ const Footer = () => {
 
 export default Footer;
 
-const LinkGroup: React.FC<{ children: React.ReactNode; header: string }>= ({ children, header }) => {
+const LinkGroup: React.FC<{ children: React.ReactNode; header: string }> = ({
+  children,
+  header,
+}) => {
   return (
     <>
       <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
@@ -219,7 +222,10 @@ const LinkGroup: React.FC<{ children: React.ReactNode; header: string }>= ({ chi
   );
 };
 
-const NavLink: React.FC<{ link: string; label: string }> = ({ link, label }) => {
+const NavLink: React.FC<{ link: string; label: string }> = ({
+  link,
+  label,
+}) => {
   return (
     <li>
       <a

@@ -1,8 +1,12 @@
 import "../styles.css";
-
+import Navbar from "@/UI/NavBar";
+import Footer from "@/UI/Footer";
 export default function BGMI() {
   return (
     <>
+      <Navbar />
+      <div className="pt-10"></div>
+
       <section className="w-full py-8 md:py-16 lg:py-20 bg-eve text-white">
         <div className="container px-4 flex flex-col items-center gap-4 text-center md:gap-8 md:px-6">
           <div className="space-y-4 md:space-y-6">
@@ -81,8 +85,8 @@ export default function BGMI() {
               The top 2 teams will be rewarded handsomely:
             </p>
             <ul className="list-disc pl-6">
-              <li>1st Prize: ₹2,---</li>
-              <li>2nd Prize: ₹1,---</li>
+              <li>1st Prize: ₹2,000</li>
+              <li>2nd Prize: ₹1,000</li>
             </ul>
             <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
               Contact
@@ -92,20 +96,25 @@ export default function BGMI() {
               to our event coordinators:
             </p>
             <div className="flex gap-[4rem]">
-            <ul className=" list-disc pl-6">
-              <h1><strong>Student Co-ordinators</strong></h1>
-              <li>Rogan - 8015639911</li>
-              <li>Ajay S - 9360364123</li>
-            </ul>
-            <ul className="list-disc pl-6">
-              <h1><strong>Staff Co-ordinators</strong></h1>
-              <li>Mr.Thiyagarajan -......</li>
-              <li>Mrs.Cinthuja - 8610686509</li>
-            </ul>
+              <ul className=" list-disc pl-6">
+                <h1>
+                  <strong>Student Co-ordinators</strong>
+                </h1>
+                <li>Rogan - 8015639911</li>
+                <li>Ajay S - 9360364123</li>
+              </ul>
+              <ul className="list-disc pl-6">
+                <h1>
+                  <strong>Staff Co-ordinators</strong>
+                </h1>
+                <li>Mr.Thiyagarajan -9003175205 </li>
+                <li>Mrs.Cinthuja - 8610686509</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

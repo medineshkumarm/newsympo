@@ -58,7 +58,7 @@ const TechnicalEvents: React.FC = () => {
     },
     {
       image: img4,
-      CardTitle: "RED PASS GREEN",
+      CardTitle: "CODE-RPG",
       CardDescription:
         "Break the code, paint the town red! RED BREAK GREEN challenges your coding skills, creativity, and teamwork. Which team will shine bright with red and green ribbons?",
       btnHref: "/rpg",
@@ -92,7 +92,7 @@ const NonTechnicalEvents: React.FC = () => {
     },
     {
       image: img2,
-      CardTitle: " IPL AUCTION",
+      CardTitle: "IPL AUCTION",
       CardDescription:
         "Experience the thrill of IPL AUCTION! From CLASSIC QUIZ to strategic player selections with a budget of 100 crore, it's a cricketing journey where only the champions prevail.",
       btnHref: "/ipl",
