@@ -6,7 +6,6 @@ export default function BGMI() {
     <>
       <Navbar />
       <div className="pt-12"></div>
-
       <section className="w-full py-8 md:py-16 lg:py-20 bg-eve text-white">
         <div className="container px-4 flex flex-col items-center gap-4 text-center md:gap-8 md:px-6">
           <div className="space-y-4 md:space-y-6">
@@ -26,7 +25,7 @@ export default function BGMI() {
               <div className="space-y-4 text-left">
                 <h3 className="font-bold">Event Details</h3>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Prelims Date: 6th March 
+                  Prelims Date: 6th March
                 </p>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
                   Finals Date: 9th March
@@ -43,7 +42,7 @@ export default function BGMI() {
               <div className="space-y-4 text-left">
                 <h3 className="font-bold">Round 1: DUO CLASSIC(Online)</h3>
                 <p>
-                  <strong>Rules:</strong> 
+                  <strong>Rules:</strong>
                 </p>
                 <ul className="list-disc pl-6">
                   <li>
@@ -51,14 +50,13 @@ export default function BGMI() {
                     the final round.
                   </li>
                 </ul>
-               
               </div>
             </div>
             <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8 bg-gradient-to-r from-green-800 to-teal-800 text-white">
               <div className="space-y-4 text-left">
                 <h3 className="font-bold">Round 2:TDM Clash(Offline)</h3>
                 <p>
-                  <strong>Rules:</strong> 
+                  <strong>Rules:</strong>
                 </p>
                 <ul className="list-disc pl-6">
                   <li>TDM between 10 teams (Duo).</li>

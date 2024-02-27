@@ -1,7 +1,10 @@
 ("use client");
 import Footer from "../../UI/Footer";
-import vid from "/video/introd.mp4";
-import vid1 from "/video/about.mp4";
+// import vid from "/video/introd.mp4";
+// import vid1 from "/video/about.mp4";
+
+import vid from "/mini/introd.av1.mp4";
+import vid1 from "/mini/about.av1.mp4";
 
 import Navbar from "../..//UI/NavBar";
 import "./Home.css";

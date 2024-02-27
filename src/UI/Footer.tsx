@@ -66,7 +66,7 @@ const Footer = () => {
             <LinkGroup header="FACULTY COORDINATORS">
               <NavLink
                 link="/#"
-                label="Mrs. S.T.SANTHANALAKSHMI - 89392 75959"
+                label="Mrs.S.T.SANTHANALAKSHMI - 89392 75959"
               />
               {/* <NavLink link="/#" label="Name2:" /> */}
             </LinkGroup>

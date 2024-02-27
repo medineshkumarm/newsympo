@@ -16,10 +16,9 @@ export function SampleHome() {
               </h1>
               <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 ">
                 Welcome to Xerone 2K24 Symposium, where innovation meets
-                inspiration in a fusion of technical prowess and non-technical
-                excitement! Embark on a journey through cutting-edge technology
-                and exhilarating competition as we present a diverse set of
-                events designed to challenge and entertain.
+                inspiration! Join us for a fusion of technical prowess and
+                non-technical excitement, presented by the Department of
+                Computer Science and Engineering (CSE).
               </p>
               {/* <h2>
                 <strong className="sm:text-xs md:text-xl space-x-1">
@@ -31,7 +30,7 @@ export function SampleHome() {
           </div>
         </section>
 
-        <section className="w-full py-12 md:py-24 lg:py-32 border-t">
+        <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
             <div className="space-y-3">
               <h2 className="neon text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -131,7 +130,7 @@ export function SampleHome() {
           </div>
         </section>
         <div className="grid grid-cols-2  sm:grid-cols-1 m-0 p-0">
-          <section className="w-full py-12 md:py-24 lg:py-32 border-t">
+          <section className="w-full py-12 md:py-24 lg:py-32">
             <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
               <div className="space-y-3">
                 <h2 className="neon text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -152,7 +151,7 @@ export function SampleHome() {
             </div>
           </section>
 
-          <section className="w-full py-12 md:py-24 lg:py-32 border-t">
+          <section className="w-full py-12 md:py-24 lg:py-32">
             <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
               <div className="space-y-3">
                 <h2 className=" neon text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
