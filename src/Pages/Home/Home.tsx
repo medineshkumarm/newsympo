@@ -3,11 +3,9 @@ import Footer from "../../UI/Footer";
 import vid from "/video/introd.mp4";
 import Navbar from "../..//UI/NavBar";
 import "./Home.css";
-// import CountDown from "../../UI/CountDown";
-
-// import Navbar from "../../UI/NavBar";
-// import General from "@/UI/General";
 // import { Carousels } from "@/UI/Carousels";
+// import General from "@/UI/General";
+
 // import BG2 from "@/BG2";
 import { SampleHome } from "@/components/component/SampleHome";
 function Home() {
@@ -18,7 +16,7 @@ function Home() {
         <SampleHome />
         <Footer />
       </div>
-      {/* <Carousels /> */}
+      
     </>
   );
 }
@@ -55,9 +53,10 @@ function BG2() {
 }
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+// import { Carousel } from "@/components/ui/carousel";
 
 // NOTE: Change this date to whatever date you want to countdown to :)
-const COUNTDOWN_FROM = "02/31/2024";
+const COUNTDOWN_FROM = "03/09/2024";
 
 const SECOND = 1000;
 const MINUTE = SECOND * 60;
@@ -101,7 +100,7 @@ const CountDown = () => {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto flex items-center glass text-black">
+    <div className="w-full max-w-4xl mx-auto flex items-center  text-white">
       <CountdownItem num={remaining.days} text="days" />
       <CountdownItem num={remaining.hours} text="hours" />
       <CountdownItem num={remaining.minutes} text="minutes" />
@@ -115,7 +114,7 @@ interface CountdownItemProps {
 }
 const CountdownItem: React.FC<CountdownItemProps> = ({ num, text }) => {
   return (
-    <div className="font-mono w-1/4 h-20 md:h-20 flex flex-col gap-1 md:gap-2 items-center justify-center border-[.2px]">
+    <div className="font-mono w-1/4 h-20 md:h-20 flex flex-col gap-1 md:gap-2 items-center justify-center border-r-[1px]">
       <div className="w-full text-center relative overflow-hidden">
         <AnimatePresence mode="popLayout">
           <motion.span
@@ -124,7 +123,7 @@ const CountdownItem: React.FC<CountdownItemProps> = ({ num, text }) => {
             animate={{ y: "0%" }}
             exit={{ y: "-100%" }}
             transition={{ ease: "backIn", duration: 0.75 }}
-            className="block text-xl md:text-2xl lg:text-xl xl:text-2xl text-black  font-extrabold"
+            className="block text-xl md:text-2xl lg:text-xl xl:text-2xl text-white  font-extrabold"
           >
             {num}
           </motion.span>

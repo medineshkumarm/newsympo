@@ -5,6 +5,7 @@ import img1 from "/img/1.png";
 import img2 from "/img/2.png";
 import img3 from "/img/3.png";
 import img4 from "/img/4.png";
+import "../pages.css"
 interface SingleCardProps {
   image: string;
   Button: string;
@@ -26,7 +27,7 @@ const SingleCard: React.FC<SingleCardProps> = ({
       <h3 className="text-2xl font-semibold mb-4 p-8 text-center text-white bg-primary dark:bg-dark-2">
         {CardTitle}
       </h3>
-      <img src={image} alt="" className="w-3/4 mx-auto" />
+      <img src={image} alt="" className="w-3/4 mx-auto rounded-[18px]" />
       <div className="p-8 text-center sm:p-9 md:p-7 xl:p-9">
         <p className="mb-7 sm:text-xs md:text-xl  text-body-color dark:text-dark-6">
           {CardDescription}
@@ -35,7 +36,7 @@ const SingleCard: React.FC<SingleCardProps> = ({
         {Button && (
           <a
             href={btnHref || "#"}
-            className="text-black bg-slate-200 hover:bg-slate-950 hover:text-white inline-block rounded-full border border-gray-3 px-7 py-2 text-base font-medium text-body-color transition hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-dark-6"
+            className="text-black bg-slate-200 hover:bg-slate-950 inline-block rounded-full border border-gray-3 px-7 py-2 text-base font-medium text-body-color transition hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-dark-6"
           >
             {Button}
           </a>
@@ -67,7 +68,7 @@ const TechnicalEvents: React.FC = () => {
   ];
 
   return (
-    <section className="bg-gray-2 pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
+    <section className=" text-gray-200 bg-gray-2 pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
     <div className="container mx-auto">
       <div className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2">
         {technicalEventsData.map((event, index) => (
@@ -101,11 +102,11 @@ const NonTechnicalEvents: React.FC = () => {
   ];
 
   return (
-    <section className="bg-gray-2 pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
+    <section className="text-gray-200 bg-gray-2 pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
     <div className="container mx-auto">
-      <div className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2">
+      <div className="grid gap-8 sm:grid-cols-1  lg:grid-cols-2">
         {nonTechnicalEventsData.map((event, index) => (
-          <SingleCard key={index} {...event} />
+          <SingleCard  key={index} {...event} />
         ))}
       </div>
     </div>
@@ -120,11 +121,11 @@ const Events: React.FC = () => {
       <div className="pb-[120px] bg-black"></div>
       <div className="bg-logo text-white bg-cover">
         <div className="tech-cards text-center">
-          <h1 className="text-4xl underline font-bold">Technical Events</h1>
+          <h1 className="text-4xl sm:text-3xl font-bold neon pop">Technical Events</h1>
           <TechnicalEvents />
         </div>
         <div className="nontech-cards text-center">
-          <h1 className="text-4xl underline font-bold">Non-Technical Events</h1>
+          <h1 className="text-4xl sm:text-3xl font-bold neon pop">Non-Technical Events</h1>
           <NonTechnicalEvents />
         </div>
       </div>

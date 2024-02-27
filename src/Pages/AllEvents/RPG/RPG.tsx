@@ -3,10 +3,10 @@ import "../styles.css";
 export default function RPG() {
   return (
     <>
-    <section className="w-full py-8 md:py-16 lg:py-20 bg-gradient-to-r from-green-500 to-blue-700 text-white">
+    <section className="w-full py-8 md:py-16 lg:py-20 bg-eve text-white">
         <div className="container px-4 flex flex-col items-center gap-4 text-center md:gap-8 md:px-6">
           <div className="space-y-4 md:space-y-6">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl neon font-bold tracking-tight">
               CODE-RPG: Coding Adventure
             </h1>
             <p className="mx-auto max-w-[600px] text-gray-300 md:text-lg lg:text-xl xl:text-2xl dark:text-gray-400">
@@ -17,7 +17,7 @@ export default function RPG() {
             </p>
           </div>
           <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
-            <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8 bg-gradient-to-r from-red-500 to-red-700 text-white">
+            <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8 bg-gradient-to-r from-green-800 to-teal-800 text-white">
               <div className="space-y-4 text-left">
                 <h3 className="font-bold">Event Details</h3>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
@@ -34,7 +34,7 @@ export default function RPG() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8 bg-gradient-to-r from-black to-blue-900 text-white">
+            <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8 bg-gradient-to-r from-green-800 to-teal-800 text-white">
               <div className="space-y-4 text-left">
                 <h3 className="font-bold">Round 1: Online Prelims</h3>
                 <p><strong>Final Name & Rules:</strong> FIND THE LANGUAGE+ CLONE THE SITE.</p>
@@ -55,7 +55,7 @@ export default function RPG() {
                 </ul>
               </div>
             </div>
-            <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8 bg-gradient-to-r from-blue-800 to-indigo-900 text-white">
+            <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8 bg-gradient-to-r from-green-800 to-teal-800 text-white">
               <div className="space-y-4 text-left">
                 <h3 className="font-bold">Round 2: Offline Finals</h3>
                 <p><strong>Final Name & Rules:</strong> Swap the Coders</p>
@@ -83,7 +83,7 @@ export default function RPG() {
           </div>
         </div>
       </section>
-      <section className="w-full py-8 md:py-16 lg:py-20 bg-gradient-to-r from-green-500 to-blue-700 text-white">
+      <section className="w-full py-8 md:py-16 lg:py-20 bg-eve text-white">
         <div className="container px-4">
           <div className="space-y-6 prose prose-gray prose-lg dark:prose-dark">
             <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight">
@@ -103,10 +103,18 @@ export default function RPG() {
               For any inquiries or clarifications, please feel free to reach out
               to our event coordinators:
             </p>
-            <ul className="list-disc pl-6">
-              <li>[Coordinator Name 1]: [Coordinator Email/Phone]</li>
-              <li>[Coordinator Name 2]: [Coordinator Email/Phone]</li>
+            <div className="flex gap-[4rem]">
+            <ul className=" list-disc pl-6">
+              <h1><strong>Student Co-ordinators</strong></h1>
+              <li>Rogan - 8015639911</li>
+              <li>Ajay S - 9360364123</li>
             </ul>
+            <ul className="list-disc pl-6">
+              <h1><strong>Staff Co-ordinators</strong></h1>
+              <li>Mr.Thiyagarajan -......</li>
+              <li>Mrs.Cinthuja - 8610686509</li>
+            </ul>
+            </div>
           </div>
         </div>
       </section>

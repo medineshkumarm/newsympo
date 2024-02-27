@@ -1,4 +1,9 @@
 import { Link } from "react-router-dom";
+import { Carousel } from "../ui/carousel";
+import '../../Pages/pages.css';
+import tech from '/img/tech-img.png'
+import { CardFooter, Card } from "@/components/ui/card"
+import ntech from '/img/non-tech.png'
 export function SampleHome() {
   return (
     <div className="flex flex-col min-h-[100dvh]  bg-gradient-text-white">
@@ -9,16 +14,17 @@ export function SampleHome() {
               <h1 className="neon pop text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Welcome to the Xerone
               </h1>
-              <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Join us for a series of engaging events conducted by Department
-                of CSE, Panimalar Engineering College
+              <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 ">
+                Welcome to Xerone 2K24 Symposium, where innovation meets inspiration in a fusion of technical prowess and non-technical excitement!
+                Embark on a journey through cutting-edge technology and exhilarating competition as we present a diverse set of events designed to challenge and entertain.
+
               </p>
-              <h2>
+              {/* <h2>
                 <strong className="sm:text-xs md:text-xl space-x-1">
                   Registration Closes :{" "}
                 </strong>
                 on 5th March,2024 at 5pm
-              </h2>
+              </h2> */}
             </div>
           </div>
         </section>
@@ -29,25 +35,84 @@ export function SampleHome() {
               <h2 className="neon text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Themes
               </h2>
+
+              <Carousel />
               <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 Explore the following themes during the symposium.
               </p>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <div className="space-y-2">
-                <h3 className="text-xl font-bold">1. Techincal Events</h3>
+              {/* <div className="space-y-2">
+                <h3 className="text-xl font-bold evnt-text">1. Techincal Events</h3>
+
+                
+
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   Explore innovative solutions and redefine productivity in our
                   technical events.
                 </p>
+              </div> */}
+
+              {/* Card-1 */}
+
+              <div className="flex flex-col justify-between space-y-2">
+                <Card>
+                  <div className="grid gap-4 p-4">
+                    <img
+                      alt="Image"
+                      className="aspect-video rounded-lg object-cover"
+                      height="100"
+                      src={tech}
+                      width="440"
+                    />
+                    <div className="space-y-2">
+                      <h3 className="text-2xl font-bold tracking-tight">Non-Technical Events</h3>
+                      <p className="text-gray-500 dark:text-gray-400">
+                        A celebration of music, art, and community under the stars.
+                      </p>
+                    </div>
+                  </div>
+                  <CardFooter>
+                    <Link className="font-semibold underline underline-offset-2" href="#">
+                      Register now
+                    </Link>
+                  </CardFooter>
+                </Card>
               </div>
-              <div className="space-y-2">
+
+              {/* Card-2 */}
+
+              <div className="flex flex-col justify-between space-y-2">
+                <Card>
+                  <div className="grid gap-4 p-4">
+                    <img
+                      alt="Image"
+                      className="aspect-video rounded-lg object-cover"
+                      height="100"
+                      src={ntech}
+                      width="440"
+                    />
+                    <div className="space-y-2">
+                      <h3 className="text-2xl font-bold tracking-tight">Non-Technical Events</h3>
+                      <p className="text-gray-500 dark:text-gray-400">
+                        A celebration of music, art, and community under the stars.
+                      </p>
+                    </div>
+                  </div>
+                  <CardFooter>
+                    <Link className="font-semibold underline underline-offset-2" href="#">
+                      Register now
+                    </Link>
+                  </CardFooter>
+                </Card>
+              </div>
+              {/* <div className="space-y-2">
                 <h3 className="text-xl font-bold">2. Non-technical Events</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   Ignite creativity and inspire breakthroughs in our engaging
                   non-technical activities.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -97,86 +162,7 @@ export function SampleHome() {
           </section>
         </div>
       </main>
-     
+
     </div>
   );
-}
-
-{
-  /* <section className="w-full py-12 md:py-24 lg:py-32 border-t">
-          <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-            <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Keynote Speakers
-              </h2>
-              <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Learn from the best. Our keynote speakers will inspire you with
-                their insights and expertise.
-              </p>
-            </div>
-            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
-              <div className="space-y-2">
-                <h3 className="text-xl font-bold">
-                  Session 1: The Future of Technology
-                </h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Speaker: Dr. Michelle Lee
-                </p>
-              </div>
-              <div className="space-y-2">
-                <h3 className="text-xl font-bold">
-                  Session 2: Innovation and Creativity
-                </h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Speaker: John Parker
-                </p>
-              </div>
-              <div className="space-y-2">
-                <h3 className="text-xl font-bold">
-                  Session 3: Digital Transformation
-                </h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Speaker: Emily Chen
-                </p>
-              </div>
-            </div>
-          </div>
-        </section> */
-}
-
-{
-  /* <header className="h-14 flex items-center">
-        <div className="container px-4 md:px-6 flex items-center gap-4">
-          <Link className="flex items-center justify-center" href="#">
-            <MountainIcon className="h-6 w-6" />
-            <span className="sr-only">Acme Inc</span>
-          </Link>
-          <nav className="ml-auto flex gap-4 sm:gap-6">
-            <Link
-              className="text-sm font-medium hover:underline underline-offset-4"
-              href="#"
-            >
-              Schedule
-            </Link>
-            <Link
-              className="text-sm font-medium hover:underline underline-offset-4"
-              href="#"
-            >
-              Speakers
-            </Link>
-            <Link
-              className="text-sm font-medium hover:underline underline-offset-4"
-              href="#"
-            >
-              Venue
-            </Link>
-            <Link
-              className="text-sm font-medium hover:underline underline-offset-4"
-              href="#"
-            >
-              Contact
-            </Link>
-          </nav>
-        </div>
-      </header> */
 }

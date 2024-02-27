@@ -1,0 +1,23 @@
+.pop {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  .bg-color{
+    background: var(--dark-blue);
+  }
+  .neon {
+    color: #fff;
+  
+    text-shadow:
+            0 0 20px rgba(89, 228, 243, .7),
+            0 0 50px rgba(89, 228, 243, .7),
+            0 0 110px rgba(89, 228, 243, .7);
+    
+  }
+
+
+evnt-text{
+    font-weight: 400;
+    font-style: bold;
+}

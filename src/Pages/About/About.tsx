@@ -1,158 +1,149 @@
+// Reusable Table Component
 import Navbar from "@/UI/NavBar";
-
-// const About = () => {
-//   return (
-//     <div>
-//       <Navbar />
-
-//       <header className="bg-blue-500 text-white text-center py-20">
-//         <h1 className="text-4xl font-bold mb-4">🎉 Welcome to Our College Events 🌟</h1>
-//         <p className="text-lg">
-//           Explore, Create, Connect!
-//         </p>
-//       </header>
-
-//       <section className="container mx-auto my-10">
-//         <h2 className="text-2xl font-bold mb-6 text-center">Our Vision 🚀</h2>
-//         <p className="text-gray-700 text-center">
-//           Fostering Creativity, Embracing Diversity, and Making Memories!
-//         </p>
-//       </section>
-
-//       <section className="bg-gray-100 py-10">
-//         <div className="container mx-auto">
-//           <h2 className="text-2xl font-bold mb-6 text-center">Why Choose Our Events? 🌈</h2>
-//           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-//             <div className="p-4 text-center">
-//               <h3 className="text-xl font-bold mb-2">🎨 Diverse Range of Activities</h3>
-//               <p className="text-gray-700">
-//                 Tech Competitions, Cultural Performances, and Everything In Between!
-//               </p>
-//             </div>
-//             <div className="p-4 text-center">
-//               <h3 className="text-xl font-bold mb-2">🤝 Networking Opportunities</h3>
-//               <p className="text-gray-700">
-//                 Connect with Industry Pros, Alumni, and Like-minded Creatives!
-//               </p>
-//             </div>
-//             <div className="p-4 text-center">
-//               <h3 className="text-xl font-bold mb-2">🎉 Fun and Learning Combined</h3>
-//               <p className="text-gray-700">
-//                 Educational Yet Enjoyable - Where Learning Meets Laughter!
-//               </p>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-
-//       <section className="container mx-auto my-10">
-//         <h2 className="text-2xl font-bold mb-6 text-center">Event Highlights 🌟</h2>
-//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-//           <div className="p-4 text-center">
-//             <img src="https://placekitten.com/800/600" alt="Event 1" className="w-full h-40 object-cover mb-4 rounded-lg" />
-//             <h3 className="text-xl font-bold mb-2">TechFest 💻</h3>
-//             <p className="text-gray-700">
-//               Workshops, Hackathons, and Tech Enthusiast Paradise!
-//             </p>
-//           </div>
-//           <div className="p-4 text-center">
-//             <img src="https://placekitten.com/801/601" alt="Event 2" className="w-full h-40 object-cover mb-4 rounded-lg" />
-//             <h3 className="text-xl font-bold mb-2">Cultural Night 🎶</h3>
-//             <p className="text-gray-700">
-//               Music, Dance, and a Night Bursting with Cultural Delights!
-//             </p>
-//           </div>
-//           <div className="p-4 text-center">
-//             <img src="https://placekitten.com/802/602" alt="Event 3" className="w-full h-40 object-cover mb-4 rounded-lg" />
-//             <h3 className="text-xl font-bold mb-2">Innovation Expo 🚀</h3>
-//             <p className="text-gray-700">
-//               Showcase Innovation, Connect with Creatives, and Spark Ideas!
-//             </p>
-//           </div>
-//         </div>
-//       </section>
-
-//       <footer className="bg-blue-500 text-white text-center py-6">
-//         <p>&copy; 2024 Our College Events. All Rights Reserved. 🎓</p>
-//       </footer>
-//     </div>
-//   );
-// };
-
-// export default About;
-
-const About: React.FC = () => {
-  return (
-    <div>
-      <Navbar />
-
-      <header className="bg-gradient-to-r from-purple-500 via-blue-500 to-green-500 text-white text-center py-20">
-        <h1 className="text-4xl font-bold mb-4">
-          🚀 Welcome to CSE Symposium 🌟
-        </h1>
-        <p className="text-lg">Unleash Your Creativity, Ignite Innovation!</p>
-      </header>
-
-      <section className="container mx-auto my-10">
-        <h2 className="text-2xl font-bold mb-6 text-center">
-          🤖 Technical Events 1: BOTATHON
-        </h2>
-        <p className="text-gray-700 text-center">
-          Join the Automation Revolution and Bring Your Bots to Life!
-        </p>
-        {/* Add BOTATHON image */}
-        <div className="text-center mt-6">
-          <img
-            src="botathon-image-url"
-            alt="BOTATHON"
-            className="w-full h-40 object-cover rounded-lg"
-          />
-        </div>
-        {/* Sample content, you can add more details */}
-        <ul className="list-disc pl-6 mt-4">
-          <li>👥 No of Teams: 10 (3 per team)</li>
-          <li>🔍 No of Rounds: 2 (Online prelims + finals)</li>
-          <li>🏆 1st Prize: $3,000</li>
-          <li>🥈 2nd Prize: $2,000</li>
-        </ul>
-      </section>
-
-      <section className="bg-gray-100 py-10">
-        <div className="container mx-auto">
-          <h2 className="text-2xl font-bold mb-6 text-center">
-            🔥 Technical Events 2: RED BREAK GREEN
-          </h2>
-          <p className="text-gray-700 text-center">
-            Break the Code, Paint the Town Red, and Embrace the Green Challenge!
-          </p>
-          {/* Add RED BREAK GREEN image */}
-          <div className="text-center mt-6">
-            <img
-              src="red-break-green-image-url"
-              alt="RED BREAK GREEN"
-              className="w-full h-40 object-cover rounded-lg"
-            />
-          </div>
-          {/* Sample content, you can add more details */}
-          <ul className="list-disc pl-6 mt-4">
-            <li>👥 No of Teams: 10 (2 per team)</li>
-            <li>🔍 No of Rounds: 2 (Online prelims + finals)</li>
-            <li>🏆 1st Prize: $2,000</li>
-            <li>🥈 2nd Prize: $1,000</li>
-          </ul>
-        </div>
-      </section>
-
-      {/* Add more sections for NON-TECHNICAL EVENTS 1 & 2 with creative content and images */}
-
-      <footer className="bg-gradient-to-r from-purple-500 via-blue-500 to-green-500 text-white text-center py-6">
-        <p>
-          &copy; 2024 CSE Symposium. Ignite Innovation, Spark Creativity! 🎓
-        </p>
-      </footer>
-    </div>
-  );
+// Define the type for an event
+type Event = {
+  name: string;
+  prelims: string;
+  mains: string;
+  venue: string;
 };
 
-export default About;
+// Define the prop type for ScheduleTable
+type ScheduleTableProps = {
+  events: Event[];
+};
 
+const ScheduleTable: React.FC<ScheduleTableProps> = ({ events }) => (
+
+ <>
+ <Navbar/>
+  <div className="overflow-hidden rounded-lg border border-gray-300">
+    <div className="grid w-full grid-cols-4 divide-y divide-gray-300 text-xs md:grid-cols-4">
+      {/* Table Headers */}
+      <div className="flex w-full items-center justify-center p-4 sm:p-8">
+        <span className="font-semibold">Event</span>
+      </div>
+      <div className="flex w-full items-center justify-center p-4 sm:p-8">
+        <span className="font-semibold">Prelims</span>
+      </div>
+      <div className="flex w-full items-center justify-center p-4 sm:p-8">
+        <span className="font-semibold">Finals</span>
+      </div>
+      <div className="flex w-full items-center justify-center p-4 sm:p-8">
+        <span className="font-semibold">Venue</span>
+      </div>
+    </div>
+    {/* Table Body */}
+    {events.map((event, index) => (
+      <div
+        key={index}
+        className="grid w-full grid-cols-4 divide-y divide-gray-300 text-xs md:grid-cols-4"
+      >
+        <div className="flex w-full items-center justify-center p-4 sm:p-8">
+          <span>{event.name}</span>
+        </div>
+        <div className="flex w-full items-center justify-center p-4 sm:p-8">
+          <span>{event.prelims}</span>
+        </div>
+        <div className="flex w-full items-center justify-center p-4 sm:p-8">
+          <span>{event.mains}</span>
+        </div>
+        <div className="flex w-full items-center justify-center p-4 sm:p-8">
+          <span>{event.venue}</span>
+        </div>
+      </div>
+    ))}
+  </div>
+ </>
+);
+
+// Main Component
+const Schedule: React.FC = () => {
+
+  // Data for events
+  const events: Event[] = [
+
+    {
+      name: "BOT-A-THON",
+      prelims: "6th March 2024 (6pm - 7pm)",
+      mains: "9th March 2024 (8am - 11:30am)",
+      venue: "CSE BLOCK- I AV HALL",
+    },
+    {
+      name: "CODE-RPG",
+      prelims: "6th March 2024 (6pm - 7pm)",
+      mains: "9th March 2024 (8am - 11:30am)",
+      venue: "COMPUTER CENTER - II"
+    },
+    {
+      name: "BGMI",
+      prelims: "7th March 2024 (5pm - 8pm)",
+      mains: "9th March 2024 (8am - 11:30am)",
+      venue: "CSE BLOCK- I AV HALL",
+    },
+    {
+      name: "IPL",
+      prelims: "7th March 2024 (5pm - 7pm)",
+      mains: "9th March 2024 (8am - 11:30am)",
+      venue: "CSE BLOCK- III AV HALL",
+    },
+  ];
+
+  return <ScheduleTable events={events} />;
+}
+
+export default function About() {
+  return (
+    <div className="w-full text-white py-12 bg-color lg:py-24 xl:py-32">
+      <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
+        <div className="space-y-3">
+          <h1 className="neon text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            XERONE 2K24
+          </h1>
+          <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            Welcome to Xerone 2K24 Symposium, where innovation and excitement
+            collide! Explore a mix of technical brilliance and non-technical fun
+            as we present a variety of engaging events designed to challenge and
+            entertain.
+          </p>
+        </div>
+      </div>
+      <div className="container grid max-w-5xl gap-6 px-4 py-8 md:grid-cols-2 md:py-12 lg:gap-10 md:flex md:flex-row-reverse">
+        <div className="space-y-4">
+          <p className="text-gray-500 md:text-base/relaxed lg:text-xl/relaxed dark:text-gray-400">
+            Embark on a journey through cutting-edge technology and exhilarating
+            competition as we present a diverse set of events designed to
+            challenge and entertain.
+          </p>
+          <ul className=" text-gray-500 grid gap-2 text-sm list-disc list-outside md:grid-cols-2 md:gap-3 lg:text-base mx-auto">
+            <li>Unleash innovation in the realm of automation!</li>
+            <li>Level up your coding skills in an epic quest!</li>
+            <li>Gear up for gaming glory in the ultimate clash!</li>
+            <li>Bid, strategize, and conquer the virtual cricket arena!</li>
+          </ul>
+        </div>
+        <div className="flex text-white items-center justify-center">
+          <video
+            className="rounded-lg object-cover"
+            height="300"
+            width="400"
+            autoPlay
+            muted
+            loop
+          >
+            <source src="/video/about.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <div className="container grid max-w-5xl gap-6 px-4 py-8  md:py-12 lg:gap-10">
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold">Schedule</h2>
+          <div className="overflow-hidden rounded-lg border">
+            <Schedule />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

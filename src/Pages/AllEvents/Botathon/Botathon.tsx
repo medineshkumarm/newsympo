@@ -2,10 +2,10 @@ import "../styles.css";
 export default function Botathon() {
   return (
     <>
-       <section className="w-full py-8 md:py-16 lg:py-20 bg-gradient-to-r from-blue-800 to-purple-800 text-white">
+       <section className="w-full py-8 md:py-16 lg:py-20 bg-eve text-white">
         <div className="container px-4 flex flex-col items-center gap-4 text-center md:gap-8 md:px-6">
           <div className="space-y-4 md:space-y-6">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl neon font-bold tracking-tight">
               BOT-A-THON: Automation Challenge
             </h1>
             <p className="mx-auto max-w-[600px] text-gray-200 md:text-lg lg:text-xl xl:text-2xl dark:text-gray-400">
@@ -15,21 +15,24 @@ export default function Botathon() {
             </p>
           </div>
           <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
-            <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8 bg-gradient-to-r from-red-800 to-pink-800 text-white">
+            <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8  bg-gradient-to-r from-green-800 to-teal-800 text-white">
               <div className="space-y-4 text-left">
                 <h3 className="font-bold">Event Details</h3>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Prelims Date: [Sample Date]
+                  Prelims Date: 6th March,2024
                 </p>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
                   Finals Date: 09-03-2024
                 </p>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Venue: [Venue]
+                  Venue: TBD
+                </p>
+                <p className="text-sm text-gray-200 dark:text-gray-400">
+                  Team composition: Team of 3 members
                 </p>
               </div>
             </div>
-            <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8 bg-gradient-to-r from-orange-800 to-yellow-800 text-white">
+            <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8  bg-gradient-to-r from-green-800 to-teal-800 text-white">
               <div className="space-y-4 text-left">
                 <h3 className="font-bold">Round 1: Idea Summit</h3>
                 <ol className="list-decimal pl-6">
@@ -61,17 +64,20 @@ export default function Botathon() {
                     Participants will deploy their automation solutions and
                     present them during the finals.
                   </li>
+                  <li>
+                  Students should bring their own laptops with uipath studio installed 
+                  </li>
                 </ol>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="w-full py-8 md:py-16 lg:py-20 bg-gradient-to-r from-blue-800 to-purple-800 text-white">
+      <section className="w-full py-8 md:py-16 lg:py-20 bg-eve text-white">
         <div className="container px-4">
           <div className="space-y-6 prose prose-gray prose-lg dark:prose-dark">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight">
-              Selection Criteria
+            <h2 className="text-2xl  md:text-3xl lg:text-4xl xl:text-6xl font-bold tracking-tight">
+              Judging Criteria
             </h2>
             <ol className="list-decimal pl-6">
               <li>Uniqueness of the problem statement.</li>
@@ -101,6 +107,25 @@ export default function Botathon() {
                 participants in advance.
               </li>
             </ol>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+              Contact
+            </h2>
+            <p className="text-lg lg:text-xl xl:text-2xl">
+              For any inquiries or clarifications, please feel free to reach out
+              to our event coordinators:
+            </p>
+            <div className="flex gap-[4rem]">
+            <ul className=" list-disc pl-6">
+              <h1><strong>Student Co-ordinators</strong></h1>
+              <li>Laxman R U - 9025542112</li>
+              <li>Rajkumar B - 9345813634</li>
+            </ul>
+            <ul className="list-disc pl-6">
+              <h1><strong>Staff Co-ordinators</strong></h1>
+              <li>Dr.S.Balaji - 9176982281</li>
+              <li>Dr.P.J.Sathish kumar - 9962723582</li>
+            </ul>
+            </div>
           </div>
         </div>
       </section>
