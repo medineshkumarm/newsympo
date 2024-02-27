@@ -2,7 +2,7 @@
 import Footer from "../../UI/Footer";
 import vid from "/video/introd.mp4";
 import Navbar from "../..//UI/NavBar";
-
+import "./Home.css";
 // import CountDown from "../../UI/CountDown";
 
 // import Navbar from "../../UI/NavBar";
@@ -13,7 +13,7 @@ import { SampleHome } from "@/components/component/SampleHome";
 function Home() {
   return (
     <>
-      <div className= "bg-gradient-to-r from-red-800 via-amber-600  to-orange-700 text-white">
+      <div className="bg-color text-white">
         <BG2 />
         <SampleHome />
         <Footer />
@@ -39,8 +39,8 @@ function BG2() {
       </video>
 
       {/* Overlay Content */}
-      <div className="absolute p-3 inset-0 flex flex-col items-center text-white">
-        <div className="mt-auto my-16  w-full  ">
+      <div className="absolute p-3 inset-0 flex flex-col items-center text-white blurit">
+        <div className="mt-auto -mb-8  sm:-mb-4 w-full  ">
           {/* Move Countdown to the bottom */}
           <CountDown />
         </div>
@@ -101,7 +101,7 @@ const CountDown = () => {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto flex items-center bg-white text-black">
+    <div className="w-full max-w-4xl mx-auto flex items-center glass text-black">
       <CountdownItem num={remaining.days} text="days" />
       <CountdownItem num={remaining.hours} text="hours" />
       <CountdownItem num={remaining.minutes} text="minutes" />
@@ -124,7 +124,7 @@ const CountdownItem: React.FC<CountdownItemProps> = ({ num, text }) => {
             animate={{ y: "0%" }}
             exit={{ y: "-100%" }}
             transition={{ ease: "backIn", duration: 0.75 }}
-            className="block text-xl md:text-2xl lg:text-xl xl:text-2xl text-black font-medium"
+            className="block text-xl md:text-2xl lg:text-xl xl:text-2xl text-black  font-extrabold"
           >
             {num}
           </motion.span>

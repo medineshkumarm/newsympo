@@ -1,18 +1,24 @@
 import { Link } from "react-router-dom";
 export function SampleHome() {
   return (
-    <div className="flex flex-col min-h-[100dvh]  bg-gradient-to-r from-red-300 via-amber-600  to-orange-700 text-white">
+    <div className="flex flex-col min-h-[100dvh]  bg-gradient-text-white">
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
+          <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10 leading-5 ">
             <div className="space-y-3">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              <h1 className="neon pop text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Welcome to the Xerone
               </h1>
               <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 Join us for a series of engaging events conducted by Department
                 of CSE, Panimalar Engineering College
               </p>
+              <h2>
+                <strong className="sm:text-xs md:text-xl space-x-1">
+                  Registration Closes :{" "}
+                </strong>
+                on 5th March,2024 at 5pm
+              </h2>
             </div>
           </div>
         </section>
@@ -20,7 +26,7 @@ export function SampleHome() {
         <section className="w-full py-12 md:py-24 lg:py-32 border-t">
           <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
             <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              <h2 className="neon text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Themes
               </h2>
               <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
@@ -42,12 +48,6 @@ export function SampleHome() {
                   non-technical activities.
                 </p>
               </div>
-              {/* <div className="space-y-2">
-                <h3 className="text-xl font-bold">3. Digital Transformation</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Embracing change and technology
-                </p>
-              </div> */}
             </div>
           </div>
         </section>
@@ -55,7 +55,7 @@ export function SampleHome() {
           <section className="w-full py-12 md:py-24 lg:py-32 border-t">
             <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
               <div className="space-y-3">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                <h2 className="neon text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                   Schedule
                 </h2>
                 <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
@@ -77,7 +77,7 @@ export function SampleHome() {
           <section className="w-full py-12 md:py-24 lg:py-32 border-t">
             <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
               <div className="space-y-3">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                <h2 className=" neon text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                   Register
                 </h2>
                 <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
@@ -87,7 +87,7 @@ export function SampleHome() {
               </div>
               <div className="flex justify-center gap-4 md:gap-6">
                 <Link
-                  className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white text-blackpx-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+                  className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white text-black px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
                   to="/register"
                 >
                   Register Now
@@ -97,41 +97,10 @@ export function SampleHome() {
           </section>
         </div>
       </main>
-      {/* <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-gray-500 dark:text-gray-400">
-          © 2024 Acme Inc. All rights reserved.
-        </p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
-            Terms of Service
-          </Link>
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
-            Privacy
-          </Link>
-        </nav>
-      </footer> */}
+     
     </div>
   );
 }
-
-// function MountainIcon(props) {
-//   return (
-//     <svg
-//       {...props}
-//       xmlns="http://www.w3.org/2000/svg"
-//       width="24"
-//       height="24"
-//       viewBox="0 0 24 24"
-//       fill="none"
-//       stroke="currentColor"
-//       strokeWidth="2"
-//       strokeLinecap="round"
-//       strokeLinejoin="round"
-//     >
-//       <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-//     </svg>
-//   );
-// }
 
 {
   /* <section className="w-full py-12 md:py-24 lg:py-32 border-t">
