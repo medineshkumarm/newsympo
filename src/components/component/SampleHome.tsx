@@ -12,7 +12,7 @@ export function SampleHome() {
           <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10 leading-5 ">
             <div className="space-y-3">
               <h1 className="neon pop text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Welcome to the Xerone
+                Welcome to the Xerone 2k24
               </h1>
               <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 ">
                 Welcome to Xerone 2K24 Symposium, where innovation meets
@@ -134,7 +134,7 @@ export function SampleHome() {
             <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
               <div className="space-y-3">
                 <h2 className="neon text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  Event Closing Soon!
+                  Event Closes Soon!
                 </h2>
                 <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                   Hurry up! Event is closes on March 5th, 2024 at 5pm.
