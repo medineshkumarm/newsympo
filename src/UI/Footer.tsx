@@ -63,6 +63,13 @@ const Footer = () => {
               <NavLink link="/#" label="S EASHVAR - 9150190932" />
               <NavLink link="/#" label="VATTURI HARSHITHA - 8680005999" />
             </LinkGroup>
+            <LinkGroup header="HEAD OF THE DEPARTMENT- CSE">
+              <NavLink
+                link="/#"
+                label="Dr.L.Jabasheela"
+              />
+              {/* <NavLink link="/#" label="Name2:" /> */}
+            </LinkGroup>
             <LinkGroup header="FACULTY COORDINATORS">
               <NavLink
                 link="/#"
@@ -89,6 +96,7 @@ const Footer = () => {
                 <p className="text-base text-body-color dark:text-dark-6">
                    2024 PEC
                 </p>
+                
               </div>
             </div>
           </div>
@@ -175,5 +183,5 @@ const LinkGroup: React.FC<{ children: React.ReactNode; header: string }> = ({
 };
 
 const NavLink: React.FC<{ link: string; label: string }> = ({ label }) => {
-  return <li>{label}</li>;
+  return <li className="uppercase">{label}</li>;
 };

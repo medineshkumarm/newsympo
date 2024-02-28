@@ -44,6 +44,7 @@ function BG2() {
       <video
         className="w-full h-[69.5%] object-fit absolute top-0 left-0 block sm:hidden -mt-1" // Displayed only on mobile
         autoPlay
+        controls={false}
         muted
         loop
         playsInline // For autoplay on mobile
