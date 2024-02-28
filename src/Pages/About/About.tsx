@@ -74,13 +74,13 @@ const Schedule: React.FC = () => {
     },
     {
       name: "BGMI-CLASH",
-      prelims: "4th March 2024 (5pm - 8pm)",
+      prelims: "5th March 2024 (5pm - 8pm)",
       mains: "9th March 2024 (8am - 11:30am)",
       venue: "COMPUTER CENTER - III",
     },
     {
       name: "PEC's IPL AUCTION",
-      prelims: "4th March 2024 (5pm - 7pm)",
+      prelims: "5th March 2024 (5pm - 7pm)",
       mains: "9th March 2024 (8am - 11:30am)",
       venue: "CSE BLOCK- III AV HALL",
     },

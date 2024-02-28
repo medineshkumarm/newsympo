@@ -120,15 +120,15 @@ export default function Botathon() {
               For any inquiries or clarifications, please feel free to reach out
               to our event coordinators:
             </p>
-            <div className="flex gap-[4rem]">
-              <ul className=" list-disc pl-6">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-[4rem]">
+              <ul className=" text-xl  pl-6">
                 <h1>
                   <strong>Student Co-ordinators</strong>
                 </h1>
                 <li>Laxman R U - 9025542112</li>
                 <li>Rajkumar B - 9345813634</li>
               </ul>
-              <ul className="list-disc pl-6">
+              <ul className=" text-xl pl-6">
                 <h1>
                   <strong>Staff Co-ordinators</strong>
                 </h1>

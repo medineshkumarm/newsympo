@@ -8,7 +8,7 @@ import RPG from "./Pages/AllEvents/RPG/RPG";
 import IPL from "./Pages/AllEvents/IPL/IPL";
 import BGMI from "./Pages/AllEvents/BGMI/BGMI";
 
-import AllEvents from "./Pages/AllEvents/AllEvents";
+// import AllEvents from "./Pages/AllEvents/AllEvents";
 // import FlapCard from "./UI/FlapCard/FlapCard";
 // import { SampleHome } from "./components/component/SampleHome";
 export default function App() {
@@ -17,7 +17,7 @@ export default function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/allevents" element={<AllEvents />} />
+          {/* <Route path="/allevents" element={<AllEvents />} /> */}
           <Route path="/about" element={<About />} />
           <Route path="/events" element={<Events />} />
           <Route path="/register" element={<Register />} />
