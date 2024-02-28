@@ -6,7 +6,7 @@ import { CardFooter, Card } from "@/components/ui/card";
 import ntech from "/img/non-tech.png";
 export function SampleHome() {
   return (
-    <div className="flex flex-col min-h-[100dvh]  bg-gradient-text-white">
+    <div className="flex flex-col min-h-[100dvh]   bg-gradient-text-white">
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10 leading-5 ">
@@ -71,17 +71,16 @@ export function SampleHome() {
                         Technical Events
                       </h3>
                       <p className="text-gray-500 dark:text-gray-400">
-                        A celebration of music, art, and community under the
-                        stars.
+                      Unleash innovation, ignite competition - where code meets creativity!
                       </p>
                     </div>
                   </div>
                   <CardFooter>
                     <Link
-                      className="font-semibold underline underline-offset-2"
-                      to="/register"
+                      className="font-semibold bg-slate-200 text-black rounded-[4px] p-1 px-2 hover:bg-black hover:text-slate-200 hover:border"
+                      to="/events"
                     >
-                      Register now
+                      Know more 
                     </Link>
                   </CardFooter>
                 </Card>
@@ -104,17 +103,16 @@ export function SampleHome() {
                         Non-Technical Events
                       </h3>
                       <p className="text-gray-500 dark:text-gray-400">
-                        A celebration of music, art, and community under the
-                        stars.
+                      Elevate excitement, ignite camaraderie - where fun meets strategy!
                       </p>
                     </div>
                   </div>
                   <CardFooter>
                     <Link
-                      className="font-semibold underline underline-offset-2"
-                      to="#"
+                      className="font-semibold bg-slate-200 text-black rounded-[4px] p-1 px-2 hover:bg-black hover:text-slate-200 hover:border"
+                      to="/events"
                     >
-                      Register now
+                      Know more
                     </Link>
                   </CardFooter>
                 </Card>
@@ -129,15 +127,15 @@ export function SampleHome() {
             </div>
           </div>
         </section>
-        <div className="grid grid-cols-2  sm:grid-cols-1 m-0 p-0">
-          <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="grid grid-cols-1  sm:grid-cols-1 m-0 p-0">
+          {/* <section className="w-full py-12 md:py-24 lg:py-32">
             <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
               <div className="space-y-3">
-                <h2 className="neon text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                <h2 className="neon text-3xl font-bold tracking-tighter sm:text-3xl md:text-3xl">
                   Event Closes Soon!
                 </h2>
                 <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Hurry up! Event is closes on March 5th, 2024 at 5pm.
+                  Hurry up! Event is closes on March 4th, 2024 at 12pm.
                 </p>
               </div>
               <div className="flex justify-center gap-4 md:gap-6">
@@ -149,17 +147,16 @@ export function SampleHome() {
                 </Link>
               </div>
             </div>
-          </section>
+          </section> */}
 
-          <section className="w-full py-12 md:py-24 lg:py-32">
+          <section className="w-full pb-24">
             <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
               <div className="space-y-3">
                 <h2 className=" neon text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                   Register
                 </h2>
                 <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Secure your spot at the symposium. Register now to access all
-                  sessions and connect with fellow attendees.
+                Hurry up! Event is closes on March 4th, 2024 at 12pm. Reserve your spot at the symposium! Register now .
                 </p>
               </div>
               <div className="flex justify-center gap-4 md:gap-6">

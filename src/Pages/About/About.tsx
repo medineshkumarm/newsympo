@@ -62,25 +62,25 @@ const Schedule: React.FC = () => {
   const events: Event[] = [
     {
       name: "BOT-A-THON",
-      prelims: "6th March 2024 (6pm - 7pm)",
+      prelims: "4th March 2024 (6pm - 7pm)",
       mains: "9th March 2024 (8am - 11:30am)",
       venue: "CSE BLOCK- I AV HALL",
     },
     {
       name: "CODE-RPG",
-      prelims: "6th March 2024 (6pm - 7pm)",
+      prelims: "4th March 2024 (6pm - 7pm)",
       mains: "9th March 2024 (8am - 11:30am)",
       venue: "COMPUTER CENTER - II",
     },
     {
       name: "BGMI-CLASH",
-      prelims: "7th March 2024 (5pm - 8pm)",
+      prelims: "4th March 2024 (5pm - 8pm)",
       mains: "9th March 2024 (8am - 11:30am)",
-      venue: "CSE BLOCK- I AV HALL",
+      venue: "COMPUTER CENTER - III",
     },
     {
       name: "PEC's IPL AUCTION",
-      prelims: "7th March 2024 (5pm - 7pm)",
+      prelims: "4th March 2024 (5pm - 7pm)",
       mains: "9th March 2024 (8am - 11:30am)",
       venue: "CSE BLOCK- III AV HALL",
     },

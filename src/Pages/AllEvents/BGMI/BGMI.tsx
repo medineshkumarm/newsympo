@@ -25,13 +25,13 @@ export default function BGMI() {
               <div className="space-y-4 text-left">
                 <h3 className="font-bold">Event Details</h3>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Prelims Date: 6th March
+                  Prelims Date: 4th March (5pm - 8pm)
                 </p>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Finals Date: 9th March
+                  Finals Date: 9th March (8am - 11:30 am)
                 </p>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Venue: CSE Block-I AV Hall
+                  Venue: COMPUTER CENTER - III
                 </p>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
                   Team Composition: A team of two members

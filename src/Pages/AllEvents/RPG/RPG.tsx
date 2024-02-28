@@ -25,7 +25,7 @@ export default function RPG() {
               <div className="space-y-4 text-left">
                 <h3 className="font-bold">Event Details</h3>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Prelims Date: 7th March (6pm - 7pm)
+                  Prelims Date: 4th March (6pm - 7pm)
                 </p>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
                   Final Date: 9th March (8am - 11:30pm)
@@ -44,7 +44,7 @@ export default function RPG() {
               <div className="space-y-4 text-left">
                 <h3 className="font-bold">
                   Round 1:{" "}
-                  <strong> FIND THE LANGUAGE+ CLONE THE SITE (Online)</strong>s
+                  <strong> FIND THE LANGUAGE+ CLONE THE SITE (Online)</strong>
                 </h3>
                 {/* <p>
                   

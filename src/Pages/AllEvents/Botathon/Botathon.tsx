@@ -23,10 +23,10 @@ export default function Botathon() {
               <div className="space-y-4 text-left">
                 <h3 className="font-bold">Event Details</h3>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Prelims Date: 6th March,2024 (6pm - 7pm)
+                  Prelims Date: 4th March,2024 (6pm - 7pm)
                 </p>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Finals Date: 09-03-2024 (8am - 11:30 am)
+                  Finals Date: 9th March (8am - 11:30 am)
                 </p>
                 <p className="text-sm text-gray-200 dark:text-gray-400">
                   Venue: CSE Block-I AV Hall
@@ -88,6 +88,7 @@ export default function Botathon() {
               <li>Uniqueness of the problem statement.</li>
               <li>Scalability of the solution provided.</li>
               <li>Feasibility.</li>
+              <li>Decision by the judge will be the final</li>
             </ol>
             <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
               Prizes & Awards

@@ -6,6 +6,7 @@ import img2 from "/img/2.png";
 import img3 from "/img/3.png";
 import img4 from "/img/4.png";
 import "../pages.css"
+import Footer from "@/UI/Footer";
 interface SingleCardProps {
   image: string;
   Button: string;
@@ -52,7 +53,7 @@ const TechnicalEvents: React.FC = () => {
       image: img3,
       CardTitle: "BOT-A-THON",
       CardDescription:
-        "Unleash the power of automation in BOTATHON! Join forces, submit your scenarios, and witness bots come to life at IDEA SUMMIT and BOT EXPO.",
+        "Unleash the power of automation in BOT-A-THON! Join forces, submit your scenarios, and witness bots come to life at IDEA SUMMIT and BOT EXPO.",
       btnHref: "/bot",
       Button: "Know more",
     },
@@ -94,7 +95,7 @@ const NonTechnicalEvents: React.FC = () => {
       image: img2,
       CardTitle: "PEC's IPL AUCTION",
       CardDescription:
-        "Experience the thrill of IPL AUCTION! From CLASSIC QUIZ to strategic player selections with a budget of 100 crore, it's a cricketing journey where only the champions prevail.",
+        "Experience the thrill of IPL AUCTION! From CLASSIC QUIZ to strategic player selections with a budget of 50 crore, it's a cricketing journey where only the champions prevail.",
       btnHref: "/ipl",
       Button: "Know more",
     },
@@ -129,6 +130,7 @@ const Events: React.FC = () => {
           <NonTechnicalEvents />
         </div>
       </div>
+      <Footer />
     </>
   );
 };

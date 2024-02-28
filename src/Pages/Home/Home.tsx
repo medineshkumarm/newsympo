@@ -42,7 +42,7 @@ function BG2() {
 
       {/* Mobile Video Background */}
       <video
-        className="w-full h-5/6  aspect-auto absolute top-0 left-0 block sm:hidden -mt-1" // Displayed only on mobile
+        className="w-full h-[69.5%] object-fit absolute top-0 left-0 block sm:hidden -mt-1" // Displayed only on mobile
         autoPlay
         muted
         loop
@@ -52,8 +52,8 @@ function BG2() {
       </video>
 
       {/* Overlay Content */}
-      <div className="absolute p-3 inset-0 flex flex-col items-center text-white blurit">
-        <div className="mt-auto -mb-8 sm:-mb-4 w-full  ">
+      <div className="absolute p-12 inset-0 flex flex-col items-center text-white blurit">
+        <div className="my-[40rem] -mb-8 sm:-mb-4  w-full  ">
           {/* Move Countdown to the bottom */}
           <CountDown />
         </div>
@@ -115,11 +115,11 @@ const CountDown = () => {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto flex items-center  text-white">
+    <div className="w-full max-w-4xl mx-auto flex items-center text-white">
       <CountdownItem num={remaining.days} text="days" />
       <CountdownItem num={remaining.hours} text="hours" />
       <CountdownItem num={remaining.minutes} text="minutes" />
-      <CountdownItem num={remaining.seconds} text="seconds" />
+      <CountdownItem num={remaining.seconds} text="seconds"  />
     </div>
   );
 };
@@ -129,7 +129,7 @@ interface CountdownItemProps {
 }
 const CountdownItem: React.FC<CountdownItemProps> = ({ num, text }) => {
   return (
-    <div className="font-mono w-1/4 h-20 md:h-20 flex flex-col gap-1 md:gap-2 items-center justify-center border-r-[1px]">
+    <div className="font-mono w-1/4 h-20 md:h-20 flex flex-col gap-1 bor md:gap-2 items-center justify-center border-r-[1px]">
       <div className="w-full text-center relative overflow-hidden">
         <AnimatePresence mode="popLayout">
           <motion.span

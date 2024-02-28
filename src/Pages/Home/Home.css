@@ -20,6 +20,15 @@
           0 0 110px rgba(89, 228, 243, .7);
   
 }
+
+.bor:last-child{
+  border: none;
+  
+}
+
+.bor{
+  margin-top: -70px;
+}
 /* glassomporhic */
 /* .glass{
   background-color:rgba(255, 255, 255, 0.151);
