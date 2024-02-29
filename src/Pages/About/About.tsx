@@ -93,7 +93,7 @@ export default function About() {
   return (
     <>
       <Navbar />
-      <div className="pt-10"></div>
+      {/* <div className="pt-10"></div> */}
       <div className="w-full text-white py-12 bg-color lg:py-24 xl:py-32">
         <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
           <div className="space-y-3">

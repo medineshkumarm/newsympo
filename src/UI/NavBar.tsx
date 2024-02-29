@@ -3,13 +3,26 @@ import img from "/img/pec-logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  
+  // scrolling
+  const [ navbgcolor, setNavBgColor ] = useState(false) ;
 
+  const changeNavBgColor = () => {
+    if( window.scrollY >= 150 ){
+      setNavBgColor(true) ;
+    }
+    else{
+      setNavBgColor(false) ;
+    }
+  }
+
+  window.addEventListener("scroll", changeNavBgColor) ;
   return (
-    <header className="flex w-full items-center bg-dark dark:bg-dark bg-black fixed">
+    <header className={`${ navbgcolor ? 'trans-bg' : '' } flex w-full items-center bg-dark dark:bg-dark fixed h-16 z-50`}>
       <div className="container">
         <div className="relative -mx-4 flex items-center justify-between">
           <div className="w-60 max-w-full px-4">
-            <a href="/#" className="block w-full py-5">
+            <a href="/#" className="block w-full py-2">
               <img src={img} alt="logo" />
             </a>
           </div>
@@ -26,7 +39,7 @@ const Navbar = () => {
               </button>
               <nav
                 id="navbarCollapse"
-                className={`absolute right-4 top-full w-full max-w-[250px] rounded-lg text-white bg-black px-6 py-5 shadow dark:bg-dark lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none lg:dark:bg-transparent ${
+                className={`absolute right-4 top-full w-full max-w-[250px] rounded-lg text-white px-6 shadow dark:bg-dark lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none lg:dark:bg-transparent ${
                   !open && "hidden"
                 } `}
               >
@@ -34,8 +47,9 @@ const Navbar = () => {
                   <ListItem NavLink="/">Home</ListItem>
                   <ListItem NavLink="/events">Events</ListItem>
                   <ListItem NavLink="/about">About</ListItem>
-                  {/* <ListItem NavLink="/contact">Contact</ListItem> */}
-                  <ListItem NavLink="/register">Register</ListItem>
+                  <a href="https://forms.gle/sQGS5WEiKAfYqdyC6" target="_blank">
+                  <h1 className="flex py-2 text-base font-medium text-body-color hover:text-dark dark:text-dark-6 dark:hover:text-white lg:ml-12 lg:inline-flex">Register</h1>
+                  </a>
                 </ul>
               </nav>
             </div>

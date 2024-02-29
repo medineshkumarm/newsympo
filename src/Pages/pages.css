@@ -1,3 +1,9 @@
+.trans-bg{
+  background: rgba(0, 0, 0, 0.5) ;
+  transition: 0.5s ;
+}
+
+
 .pop {
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;

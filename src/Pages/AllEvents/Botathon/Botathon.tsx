@@ -5,7 +5,7 @@ export default function Botathon() {
   return (
     <>
       <Navbar />
-      <div className="pt-10"></div>
+      {/* <div className="pt-10"></div> */}
       <section className="w-full py-8 md:py-16 lg:py-20 bg-eve text-white">
         <div className="container px-4 flex flex-col items-center gap-4 text-center md:gap-8 md:px-6">
           <div className="space-y-4 md:space-y-6">

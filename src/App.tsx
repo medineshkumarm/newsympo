@@ -20,7 +20,7 @@ export default function App() {
           {/* <Route path="/allevents" element={<AllEvents />} /> */}
           <Route path="/about" element={<About />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/register" element={<Register />} />
+          {/* <Route path="/register" element={<Register />} /> */}
     
           <Route path="/bot" element={<Botathon />} />
           <Route path="/rpg" element={<RPG />} />

@@ -29,7 +29,7 @@ export default Home;
 
 function BG2() {
   return (
-    <div className="relative h-screen">
+    <div className="relative h-screen pt-2">
       {/* Video Background */}
       <video
         className="w-full h-5/6 object-cover absolute top-0 left-0 hidden sm:block" // Hidden on mobile

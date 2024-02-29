@@ -1,23 +1,18 @@
-import icon from "/img/pec-logo.png";
 const Footer = () => {
   return (
     <>
-      <footer className="relative z-10 bg-black text-white pb-10 pt-5 dark:bg-dark lg:pb-20 lg:pt-[120px] ">
+      <footer className="relative z-10 bg-black text-white pb-10 pt-5 dark:bg-dark lg:pb-20 lg:pt-[12px] ">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
               <div className="mb-10 w-full">
-                <a href="/#" className="mb-6 inline-block max-w-[160px]">
-                  <img
+                <a href="/#" className="mb-2 inline-block max-w-[240px]">
+                  {/* <img
                     src={icon}
                     alt="logo"
                     className="max-w-full dark:hidden"
-                  />
-                  <img
-                    src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-white.svg"
-                    alt="logo"
-                    className="max-w-full hidden dark:block"
-                  />
+                  /> */}
+                  <p className="max-w-full dark:hidden" ><b>Panimalar Engineering College</b></p>
                 </a>
                 <p className="mb-7 text-base text-body-color dark:text-dark-6">
                   Bangalore Trunk Road, Varadharajapuram, Poonamallee, Chennai –
@@ -58,32 +53,35 @@ const Footer = () => {
               </div>
             </div>
 
-            <LinkGroup header="STUDENT COMMITTEE">
-              <NavLink link="/#" label="S EASHVAR - 9150190932" />
-              <NavLink link="/#" label="VATTURI HARSHITHA - 8680005999" />
-            </LinkGroup>
+           
             <LinkGroup header="HEAD OF THE DEPARTMENT- CSE">
               <NavLink
                 link="/#"
-                label="Dr.L.Jabasheela"
+                label="Dr. L. JABASHEELA"
               />
               {/* <NavLink link="/#" label="Name2:" /> */}
             </LinkGroup>
-            <LinkGroup header="FACULTY COORDINATORS">
+            <LinkGroup header="FACULTY CO-ORDINATORS">
               <NavLink
                 link="/#"
-                label="Mrs.S.T.SANTHANALAKSHMI - 89392 75959"
+                label="Mrs.S.T.SANTHANALAKSHMI&nbsp;-&nbsp;8939275959"
               />
               {/* <NavLink link="/#" label="Name2:" /> */}
             </LinkGroup>
-
+            <LinkGroup header="STUDENT COMMITTEE">
+              <NavLink link="/#" label="S. EASHVAR - 9150190932" />
+              <NavLink link="/#" label="VATTURI HARSHITHA - 8680005999" />
+            </LinkGroup>
             <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
+              {/* <div>
+                <img src="/img/" />
+              </div> */}
               <div className="mb-10 w-full">
-                <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white">
+                <h4 className="mb-5 text-lg font-semibold text-dark dark:text-white">
                   Follow Us On
                 </h4>
                 <div className="mb-6 flex items-center">
-                  <a href="https://www.instagram.com/xerone_2k24?igsh=MXNnMXExc3Y3ZGZubA==">
+                  <a href="https://www.instagram.com/xerone_2k24?igsh=MXNnMXExc3Y3ZGZubA==" target="_blank">
                   <img
                     src="/img/instagram.png"
                     alt="instagram"
@@ -100,7 +98,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div>
+        {/* <div>
           <span className="absolute bottom-0 left-0 z-[-1]">
             <svg
               width={217}
@@ -155,7 +153,7 @@ const Footer = () => {
               </defs>
             </svg>
           </span>
-        </div>
+        </div> */}
       </footer>
     </>
   );
@@ -171,7 +169,7 @@ const LinkGroup: React.FC<{ children: React.ReactNode; header: string }> = ({
     <>
       <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
         <div className="mb-10 w-full">
-          <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white">
+          <h4 className="mb-4 text-lg font-semibold text-dark dark:text-white">
             {header}
           </h4>
           <ul className="space-y-3">{children}</ul>
@@ -182,5 +180,5 @@ const LinkGroup: React.FC<{ children: React.ReactNode; header: string }> = ({
 };
 
 const NavLink: React.FC<{ link: string; label: string }> = ({ label }) => {
-  return <li className="uppercase">{label}</li>;
+  return <li >{label}</li>;
 };
