@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Events from "./Pages/Events/Events";
-import Register from "./Pages/Register";
+// import Register from "./Pages/Register";
 import Botathon from "./Pages/AllEvents/Botathon/Botathon";
 import RPG from "./Pages/AllEvents/RPG/RPG";
 import IPL from "./Pages/AllEvents/IPL/IPL";
