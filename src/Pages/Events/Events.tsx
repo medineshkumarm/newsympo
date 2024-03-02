@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../UI/NavBar";
 import "./events.css";
+import "../pages.css"
 import img1 from "/img/1.png";
 import img2 from "/img/2.png";
 import img3 from "/img/3.png";
@@ -119,8 +120,8 @@ const Events: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className="pb-[120px] bg-black"></div>
-      <div className="bg-logo text-white bg-cover">
+      {/* <div className="pb-[120px] bg-black"></div> */}
+      <div className="bg-logo text-white bg-cover pt-[100px]">
         <div className="tech-cards text-center">
           <h1 className="text-4xl sm:text-3xl font-bold neon pop">Technical Events</h1>
           <TechnicalEvents />

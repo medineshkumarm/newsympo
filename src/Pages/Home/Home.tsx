@@ -72,7 +72,7 @@ import { useEffect, useRef, useState } from "react";
 // import { Carousel } from "@/components/ui/carousel";
 
 // NOTE: Change this date to whatever date you want to countdown to :)
-const COUNTDOWN_FROM = "03/09/2024";
+const COUNTDOWN_FROM = "03/04/2024 12:00:00";
 
 const SECOND = 1000;
 const MINUTE = SECOND * 60;

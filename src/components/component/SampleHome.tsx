@@ -156,7 +156,7 @@ export function SampleHome() {
                   Register
                 </h2>
                 <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Hurry up! Event is closes on March 4th, 2024 at 12pm. Reserve your spot at the symposium! Register now .
+                Hurry up! Event closes on March 4th, 2024 at 12pm. Reserve your spot at the symposium! Register now .
                 </p>
               </div>
               <div className="flex justify-center gap-4 md:gap-6">
