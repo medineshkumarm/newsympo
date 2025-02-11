@@ -73,7 +73,7 @@ export default function BGMI() {
               <ul className="text-lg pl-6">
                 <h1 className="text-xl font-bold">Organizers</h1>
                 <li>Surya S - 99626 23166</li>
-                <li>Karthick R - 81226 62347</li>
+                <li>Karthik R - 81226 62347</li>
               </ul>
             </div>
           </div>

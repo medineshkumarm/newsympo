@@ -23,8 +23,8 @@ export default function RPG() {
                   <h3 className="text-xl font-bold text-teal-300">{title}</h3>
                   {index === 0 && (
                     <>
-                      <p className="text-sm text-gray-200">Prelims Date: 4th March (6pm - 7pm)</p>
-                      <p className="text-sm text-gray-200">Final Date: 9th March (8am - 11:30pm)</p>
+                      <p className="text-sm text-gray-200">Prelims Date: 18th Feb (6pm - 7pm)</p>
+                      <p className="text-sm text-gray-200">Final Date: 22nd Feb (8am - 11:30pm)</p>
                       <p className="text-sm text-gray-200">Venue: Computer Center II</p>
                       <p className="text-sm text-gray-200">Team Composition: Two members per team</p>
                     </>

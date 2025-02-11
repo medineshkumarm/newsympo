@@ -14,7 +14,7 @@ export function SampleHome() {
               <h1 className="neon pop text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Welcome to the Xerone 2k25
               </h1>
-              <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 ">
+              <p className=" text-center mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 ">
                 Welcome to Xerone 2K25 Symposium, where innovation meets
                 inspiration! Join us for a fusion of technical prowess and
                 non-technical excitement, presented by the Department of
@@ -32,14 +32,14 @@ export function SampleHome() {
               </h2>
 
               <Carousel />
-              <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className="text-center mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 Explore the following themes during the symposium.
               </p>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               {/* Card-1 */}
 
-              <div className="flex flex-col justify-between space-y-2">
+              <div className="flex flex-col justify-between space-y-2 text-center">
                 <Card>
                   <div className="grid gap-4 p-4">
                     <img

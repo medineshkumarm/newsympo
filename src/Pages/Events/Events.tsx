@@ -96,7 +96,7 @@ const NonTechnicalEvents: React.FC = () => {
       image: img4,
       CardTitle: "PEC's IPL AUCTION",
       CardDescription:
-        "Experience the thrill of IPL AUCTION! From CLASSIC QUIZ to strategic player selections with a budget of 50 crore, it's a cricketing journey where only the champions prevail.",
+        "Experience the thrill of IPL AUCTION! From CLASSIC QUIZ to strategic player selections with a budget of 70 crore, it's a cricketing journey where only the champions prevail.",
       btnHref: "/ipl",
       Button: "Know more",
     },
