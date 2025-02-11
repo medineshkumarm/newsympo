@@ -1,149 +1,77 @@
 import "../styles.css";
 import Navbar from "@/UI/NavBar";
 import Footer from "@/UI/Footer";
+
 export default function IPL() {
   return (
     <>
       <Navbar />
-      {/* <div className="pt-12"></div> */}
-
-      <section className="w-full py-8 md:py-16 lg:py-20 bg-eve text-white">
-        <div className="container px-4 flex flex-col items-center gap-4 text-center md:gap-8 md:px-6">
-          <div className="space-y-4 md:space-y-6">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl neon font-bold tracking-tight text-white">
-              PEC's IPL AUCTION
+      <section className="w-full py-12 md:py-16 lg:py-20 bg-eve text-white">
+        <div className="container px-6 flex flex-col items-center gap-6 text-center md:gap-10 md:px-8">
+          <div className="space-y-6 md:space-y-8">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight bg-gradient-to-r from-yellow-400 to-orange-300 bg-clip-text text-transparent">
+              Mock IPL Auction
             </h1>
-            <p className="mx-auto max-w-[600px] text-gray-300 md:text-lg lg:text-xl xl:text-2xl dark:text-gray-400">
-              Participate in the IPL AUCTION event, a combination of cricket
-              knowledge and strategic bidding. Showcase your cricket expertise
-              in an online cricket quiz in the first round, and then move on to
-              the thrilling virtual player bidding round to assemble your dream
-              team.
+            <p className="mx-auto max-w-[750px] text-gray-300 md:text-lg lg:text-xl xl:text-2xl">
+              Experience the thrill of cricket strategy and bidding wars! Compete in the IPL Mock Auction where teams strategize, bid, and build their dream squad. Outsmart your rivals and master budget balancing to emerge victorious!
             </p>
           </div>
-          <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
-            {/* Event Details */}
-            <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8 bg-gradient-to-r from-green-800 to-teal-800 text-white">
-              <div className="space-y-4 text-left">
-                <h3 className="font-bold">Event Details</h3>
-                <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Prelims Date: 5th March (6pm - 7pm)
-                </p>
-                <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Finals Date: 9th March (8am - 11:30 am)
-                </p>
-                <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Venue: CSE BLOCK 3 AV Hall
-                </p>
-                <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Team Composition: A team of two members
-                </p>
+          <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10">
+            {["Event Details", "Competition Rounds", "Judging Criteria"].map((title, index) => (
+              <div key={index} className="mx-auto flex w-full items-center justify-center p-6 sm:p-10 bg-white/10 backdrop-blur-lg rounded-xl shadow-lg">
+                <div className="space-y-4 text-left">
+                  <h3 className="text-xl font-bold text-orange-300">{title}</h3>
+                  {index === 0 && (
+                    <>
+                      <p className="text-sm text-gray-200">Prelims Date: 20th Feb (Online)</p>
+                      <p className="text-sm text-gray-200">Final Date: 22nd Feb (Offline)</p>
+                      <p className="text-sm text-gray-200">Team Composition: Two members per team</p>
+                    </>
+                  )}
+                  {index === 1 && (
+                    <>
+                      <h4 className="font-semibold">Round 1: Prelims (Online)</h4>
+                      <ul className="list-disc pl-6">
+                        <li>20-question IPL Quiz with a 30-minute time limit.</li>
+                        <li>Top 10 teams qualify for the next round.</li>
+                      </ul>
+                      <h4 className="font-semibold">Round 2: Team Selection & Auction (Offline)</h4>
+                      <ul className="list-disc pl-6">
+                        <li>Teams pick an IPL franchise randomly.</li>
+                        <li>Each team builds a squad of 12 players (4 foreign, 8 Indian).</li>
+                        <li>Budget: ₹70 crores.</li>
+                      </ul>
+                    </>
+                  )}
+                  {index === 2 && (
+                    <ul className="list-disc pl-6">
+                      <li>Round 1: Points awarded for correct answers.</li>
+                      <li>Round 2: Players rated on performance metrics.</li>
+                      <li>Team with highest accumulated points wins.</li>
+                    </ul>
+                  )}
+                </div>
               </div>
-            </div>
-
-            {/* Round 1: Online Prelims */}
-            <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8 bg-gradient-to-r from-green-800 to-teal-800 text-white">
-              <div className="space-y-4 text-left">
-                <h3 className="font-bold">Round 1:CRIC - QUIZ(Online)</h3>
-                <p>
-                  <strong>Rules:</strong>
-                </p>
-                <ul className="list-disc pl-6">
-                  <li>
-                    Engage in a dynamic online cricket quiz featuring 20
-                    questions, testing your cricket knowledge.
-                  </li>
-                  <li>
-                    Each team has a 30-minute time limit to answer questions
-                    accurately and swiftly.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Round 2: Offline Finals */}
-            <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8 bg-gradient-to-r from-green-800 to-teal-800 text-white">
-              <div className="space-y-4 text-left">
-                <h3 className="font-bold">
-                  Round 2: PEC's IPL AUCTION(Offline)
-                </h3>
-                <p>
-                  <strong>Rules:</strong>{" "}
-                </p>
-                <ul className="list-disc pl-6">
-                  <li>
-                    Each team is given a budget of 50 crore rupees for the final
-                    round.
-                  </li>
-                  <li>
-                    Teams are required to select 11 players, with a composition
-                    of 4 foreign players and 7 Indian players.
-                  </li>
-                  <li>Each player is assigned a certain number of points.</li>
-                </ul>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
-      <section className="w-full py-8 md:py-16 lg:py-20 bg-eve text-white">
-        <div className="container px-4">
-          <div className="space-y-6 prose prose-gray prose-lg dark:prose-dark">
-            <h2 className="text-2xl  md:text-3xl lg:text-4xl xl:text-6xl font-bold tracking-tight">
-              Judging Criteria
-            </h2>
-            <ol className="list-decimal pl-6">
-              <h3>
-                <strong>Round 1</strong>
-              </h3>
-              <li>Cumulative points from correctly answered questions.</li>
-              <li>
-                In the event of a tie, priority is given to the team that
-                completed the quiz first..
-              </li>
-            </ol>
-            <ol className="list-decimal pl-6">
-              <h3>
-                <strong>Round 2</strong>
-              </h3>
-              <li>
-                The total points for all players in each team are calculated,
-                and the team with the highest points is declared the winner of
-                the event.
-              </li>
-            </ol>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-              Prizes & Awards
-            </h2>
+      <section className="w-full py-12 md:py-16 lg:py-20 bg-eve text-white">
+        <div className="container px-6">
+          <div className="space-y-8 prose prose-gray prose-lg">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-orange-300">Prizes & Awards</h2>
             <ul className="list-disc pl-6">
-              <li>1st Prize: Rs.2000/-</li>
-              <li>2nd Prize: Rs.1000/-</li>
+              <li>First Prize: ₹2000</li>
+              <li>Second Prize: ₹1000</li>
+              <li>E-certificates for all participants.</li>
             </ul>
-            <p className="text-lg lg:text-xl xl:text-2xl">
-              E-certificates will be provided to all the participants.
-            </p>
-
-            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-              Contact
-            </h2>
-            <p className="text-lg lg:text-xl xl:text-2xl">
-              For any inquiries or clarifications, please feel free to reach out
-              to our event coordinators:
-            </p>
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-[4rem]">
-              <ul className="text-xl pl-6">
-                <h1>
-                  <strong>Student Co-ordinators</strong>
-                </h1>
-                <li>Lingeshwaran B - 73387 19242</li>
-                <li>Ramkumar M - 6369292113</li>
-              </ul>
-              <ul className="text-xl pl-6">
-                <h1>
-                  <strong>Staff Co-ordinators</strong>
-                </h1>
-                <li>Dr. N. Pugazhendi - 9962969429</li>
-                <li>Mrs. C.Jackulin - 8939229230</li>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-orange-300">Contact</h2>
+            <p className="text-lg lg:text-xl">For inquiries, contact our organizers:</p>
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
+              <ul className="text-lg pl-6">
+                <h1 className="text-xl font-bold">Student Coordinators</h1>
+                <li>Sridhar D - 9345610538</li>
+                <li>Emmanuel Prithish S - 9025557013</li>
               </ul>
             </div>
           </div>

@@ -1,17 +1,14 @@
 ("use client");
 import Footer from "../../UI/Footer";
-// import vid from "/video/introd.mp4";
-// import vid1 from "/video/about.mp4";
+import vid from "/video/introd.mp4";
+import vid1 from "/video/introd.mp4";
 
-import vid from "/mini/introd.av1.mp4";
-import vid1 from "/mini/about.av1.mp4";
+// import vid from "/mini/introd.av1.mp4";
+// import vid1 from "/mini/about.av1.mp4";
 
 import Navbar from "../..//UI/NavBar";
 import "./Home.css";
-// import { Carousels } from "@/UI/Carousels";
-// import General from "@/UI/General";
 
-// import BG2 from "@/BG2";
 import { SampleHome } from "@/components/component/SampleHome";
 function Home() {
   return (
@@ -53,7 +50,7 @@ function BG2() {
       </video>
 
       {/* Overlay Content */}
-      <div className="absolute p-12 inset-0 flex flex-col items-center text-white blurit">
+      <div className="absolute p-6 inset-0 flex flex-col items-center text-white blurit">
         <div className="my-[40rem] -mb-8 sm:-mb-4  w-full  ">
           {/* Move Countdown to the bottom */}
           <CountDown />
@@ -69,10 +66,9 @@ function BG2() {
 }
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-// import { Carousel } from "@/components/ui/carousel";
 
-// NOTE: Change this date to whatever date you want to countdown to :)
-const COUNTDOWN_FROM = "03/04/2024 12:00:00";
+const COUNTDOWN_FROM = "2025-02-22T12:00:00"; // ISO format (YYYY-MM-DDTHH:mm:ss)
+
 
 const SECOND = 1000;
 const MINUTE = SECOND * 60;
@@ -94,27 +90,24 @@ const CountDown = () => {
 
     return () => clearInterval(intervalRef.current || undefined);
   }, []);
-
   const handleCountdown = () => {
-    const end = new Date(COUNTDOWN_FROM);
-
+    const end = new Date(COUNTDOWN_FROM); // Ensure a valid format
     const now = new Date();
-
-    const distance = +end - +now;
-
-    const days = Math.floor(distance / DAY);
-    const hours = Math.floor((distance % DAY) / HOUR);
-    const minutes = Math.floor((distance % HOUR) / MINUTE);
-    const seconds = Math.floor((distance % MINUTE) / SECOND);
-
+    const distance = end.getTime() - now.getTime();
+  
+    if (distance < 0) {
+      setRemaining({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      return;
+    }
+  
     setRemaining({
-      days,
-      hours,
-      minutes,
-      seconds,
+      days: Math.floor(distance / DAY),
+      hours: Math.floor((distance % DAY) / HOUR),
+      minutes: Math.floor((distance % HOUR) / MINUTE),
+      seconds: Math.floor((distance % MINUTE) / SECOND),
     });
   };
-
+  
   return (
     <div className="w-full max-w-4xl mx-auto flex items-center text-white">
       <CountdownItem num={remaining.days} text="days" />
@@ -150,4 +143,3 @@ const CountdownItem: React.FC<CountdownItemProps> = ({ num, text }) => {
   );
 };
 
-// export default CountDown;

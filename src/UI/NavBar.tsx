@@ -3,22 +3,25 @@ import img from "/img/pec-logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  
+
   // scrolling
-  const [ navbgcolor, setNavBgColor ] = useState(false) ;
+  const [navbgcolor, setNavBgColor] = useState(false);
 
   const changeNavBgColor = () => {
-    if( window.scrollY >= 150 ){
-      setNavBgColor(true) ;
+    if (window.scrollY >= 150) {
+      setNavBgColor(true);
+    } else {
+      setNavBgColor(false);
     }
-    else{
-      setNavBgColor(false) ;
-    }
-  }
+  };
 
-  window.addEventListener("scroll", changeNavBgColor) ;
+  window.addEventListener("scroll", changeNavBgColor);
   return (
-    <header className={`${ navbgcolor ? 'trans-bg' : '' } flex w-full items-center bg-dark dark:bg-dark fixed h-16 z-50`}>
+    <header
+      className={`${
+        navbgcolor ? "trans-bg" : ""
+      } flex w-full items-center bg-dark dark:bg-dark fixed h-16 z-50`}
+    >
       <div className="container">
         <div className="relative -mx-4 flex items-center justify-between">
           <div className="w-60 max-w-full px-4">
@@ -47,8 +50,13 @@ const Navbar = () => {
                   <ListItem NavLink="/">Home</ListItem>
                   <ListItem NavLink="/events">Events</ListItem>
                   <ListItem NavLink="/about">About</ListItem>
-                  <a href="https://forms.gle/sQGS5WEiKAfYqdyC6" target="_blank">
-                  <h1 className="flex py-2 text-base font-medium text-body-color hover:text-dark dark:text-dark-6 dark:hover:text-white lg:ml-12 lg:inline-flex">Register</h1>
+                  <a
+                    href="https://docs.google.com/forms/d/1AbraNRR2x8-QYULluq9lxsc4mNMOOMPdd94Q9GEsPZE/viewform?edit_requested=true"
+                    target="_blank"
+                  >
+                    <h1 className="flex py-2 text-base font-medium text-body-color hover:text-dark dark:text-dark-6 dark:hover:text-white lg:ml-12 lg:inline-flex">
+                      Register
+                    </h1>
                   </a>
                 </ul>
               </nav>

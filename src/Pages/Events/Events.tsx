@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "../../UI/NavBar";
 import "./events.css";
-import "../pages.css"
-import img1 from "/img/1.png";
-import img2 from "/img/2.png";
-import img3 from "/img/3.png";
-import img4 from "/img/4.png";
-import "../pages.css"
+import "../pages.css";
+import img1 from "/newImg/1.png";
+import img2 from "/newImg/2.png";
+import img3 from "/newImg/3.png";
+import img4 from "/newImg/4.png";
+import "../pages.css";
 import Footer from "@/UI/Footer";
 interface SingleCardProps {
   image: string;
@@ -51,18 +51,18 @@ const SingleCard: React.FC<SingleCardProps> = ({
 const TechnicalEvents: React.FC = () => {
   const technicalEventsData = [
     {
-      image: img3,
-      CardTitle: "BOT-A-THON",
+      image: img1,
+      CardTitle: "ENVISION",
       CardDescription:
-        "Unleash the power of automation in BOT-A-THON! Join forces, submit your scenarios, and witness bots come to life at IDEA SUMMIT and BOT EXPO.",
+        "Present groundbreaking research, showcase innovation, and captivate judges with your ideas!",
       btnHref: "/bot",
       Button: "Know more",
     },
     {
-      image: img4,
-      CardTitle: "CODE-RPG",
+      image: img2,
+      CardTitle: "Code-RPG",
       CardDescription:
-        "Break the code, paint the town red! RED BREAK GREEN challenges your coding skills, creativity, and teamwork. Which team will shine bright with red and green ribbons?",
+        "Test your coding skills in this unique challenge! Solve logic puzzles, crack codes, and compete to be the ultimate Code Master.",
       btnHref: "/rpg",
       Button: "Know more",
     },
@@ -71,48 +71,47 @@ const TechnicalEvents: React.FC = () => {
 
   return (
     <section className=" text-gray-200 bg-gray-2 pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
-    <div className="container mx-auto">
-      <div className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2">
-        {technicalEventsData.map((event, index) => (
-          <SingleCard key={index} {...event} />
-        ))}
+      <div className="container mx-auto">
+        <div className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2">
+          {technicalEventsData.map((event, index) => (
+            <SingleCard key={index} {...event} />
+          ))}
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
   );
 };
 
 const NonTechnicalEvents: React.FC = () => {
   const nonTechnicalEventsData = [
     {
-      image: img1,
-      CardTitle: "BGMI-CLASH",
+      image: img3,
+      CardTitle: "BGMI-TOURNAMENT",
       CardDescription:
-        "Gear up for E-SPORT! Engage in fierce battles during DUO CLASSIC and experience the ultimate TDM clash in the gaming arena. Only the best will conquer!",
+        "Battle it out in DUO CLASSIC and the intense TDM finale. The ultimate gaming showdown where only the best rise to victory!",
       btnHref: "/bgmi",
       Button: "Know more",
     },
     {
-      image: img2,
+      image: img4,
       CardTitle: "PEC's IPL AUCTION",
       CardDescription:
         "Experience the thrill of IPL AUCTION! From CLASSIC QUIZ to strategic player selections with a budget of 50 crore, it's a cricketing journey where only the champions prevail.",
       btnHref: "/ipl",
       Button: "Know more",
     },
-    // Add more non-technical events as needed
   ];
 
   return (
     <section className="text-gray-200 bg-gray-2 pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
-    <div className="container mx-auto">
-      <div className="grid gap-8 sm:grid-cols-1  lg:grid-cols-2">
-        {nonTechnicalEventsData.map((event, index) => (
-          <SingleCard  key={index} {...event} />
-        ))}
+      <div className="container mx-auto">
+        <div className="grid gap-8 sm:grid-cols-1  lg:grid-cols-2">
+          {nonTechnicalEventsData.map((event, index) => (
+            <SingleCard key={index} {...event} />
+          ))}
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
   );
 };
 
@@ -121,13 +120,17 @@ const Events: React.FC = () => {
     <>
       <Navbar />
       {/* <div className="pb-[120px] bg-black"></div> */}
-      <div className="bg-logo text-white bg-cover pt-[100px]">
+      <div className="bg-eve text-white bg-cover pt-[100px]">
         <div className="tech-cards text-center">
-          <h1 className="text-4xl sm:text-3xl font-bold neon pop">Technical Events</h1>
+          <h1 className="text-4xl sm:text-3xl font-bold neon pop">
+            Technical Events
+          </h1>
           <TechnicalEvents />
         </div>
         <div className="nontech-cards text-center">
-          <h1 className="text-4xl sm:text-3xl font-bold neon pop">Non-Technical Events</h1>
+          <h1 className="text-4xl sm:text-3xl font-bold neon pop">
+            Non-Technical Events
+          </h1>
           <NonTechnicalEvents />
         </div>
       </div>
