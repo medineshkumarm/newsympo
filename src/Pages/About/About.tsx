@@ -61,27 +61,27 @@ const Schedule: React.FC = () => {
   // Data for events
   const events: Event[] = [
     {
-      name: "BOT-A-THON",
-      prelims: "4th March 2024 (6pm - 7pm)",
-      mains: "9th March 2024 (8am - 11:30am)",
+      name: "ENVISION",
+      prelims: "17th Feb 2025 (6pm - 7pm)",
+      mains: "22th Feb 2025 (8am - 11:30am)",
       venue: "CSE BLOCK- I AV HALL",
     },
     {
       name: "CODE-RPG",
-      prelims: "4th March 2024 (6pm - 7pm)",
-      mains: "9th March 2024 (8am - 11:30am)",
+      prelims: "18th FEB 2025 (6pm - 7pm)",
+      mains: "22th Feb 2025  (8am - 11:30am)",
       venue: "COMPUTER CENTER - II",
     },
     {
-      name: "BGMI-CLASH",
-      prelims: "5th March 2024 (5pm - 8pm)",
-      mains: "9th March 2024 (8am - 11:30am)",
+      name: "BGMI-TOURNAMENT",
+      prelims: "19th March 2025 (5pm - 8pm)",
+      mains: "22th Feb 2025  (8am - 11:30am)",
       venue: "COMPUTER CENTER - III",
     },
     {
       name: "PEC's IPL AUCTION",
-      prelims: "5th March 2024 (5pm - 7pm)",
-      mains: "9th March 2024 (8am - 11:30am)",
+      prelims: "20th March 2025 (5pm - 7pm)",
+      mains: "22th Feb 2025 (8am - 11:30am)",
       venue: "CSE BLOCK- III AV HALL",
     },
   ];
@@ -98,10 +98,10 @@ export default function About() {
         <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
           <div className="space-y-3">
             <h1 className="neon text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              XERONE 2K24
+              XERONE 2K25
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Welcome to Xerone 2K24 Symposium, where innovation and excitement
+              Welcome to Xerone 2K25 Symposium, where innovation and excitement
               collide! Explore a mix of technical brilliance and non-technical
               fun as we present a variety of engaging events designed to
               challenge and entertain.
@@ -131,7 +131,7 @@ export default function About() {
               muted
               loop
             >
-              <source src="/video/about.mp4" type="video/mp4" />
+              <source src="/video/introd.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>

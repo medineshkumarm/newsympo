@@ -30,17 +30,28 @@
   transform: rotateY(180deg);
 }
 
-.bg-eve{
-  background: rgb(14,12,57);
-  background: linear-gradient(90deg, rgba(14,12,57,1) 0%, rgba(13,11,53,1) 7%, rgba(5,4,21,1) 39%, rgba(0,0,0,1) 60%, rgba(1,15,18,1) 73%, rgba(1,18,21,1) 76%, rgba(2,34,40,1) 84%, rgba(2,48,57,1) 88%, rgba(2,54,64,1) 92%, rgba(3,66,79,1) 96%, rgba(3,66,79,1) 100%, rgba(5,106,127,1) 100%);
+.bg-eve {
+  background: rgb(14, 12, 57);
+  background: linear-gradient(
+    90deg,
+    rgba(14, 12, 57, 1) 0%,
+    rgba(13, 11, 53, 1) 7%,
+    rgba(5, 4, 21, 1) 39%,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(1, 15, 18, 1) 73%,
+    rgba(1, 18, 21, 1) 76%,
+    rgba(2, 34, 40, 1) 84%,
+    rgba(2, 48, 57, 1) 88%,
+    rgba(2, 54, 64, 1) 92%,
+    rgba(3, 66, 79, 1) 96%,
+    rgba(3, 66, 79, 1) 100%,
+    rgba(5, 106, 127, 1) 100%
+  );
 }
 
 .neon {
   color: #fff;
 
-  text-shadow:
-          0 0 20px rgba(89, 228, 243, .7),
-          0 0 50px rgba(89, 228, 243, .7),
-          0 0 110px rgba(89, 228, 243, .7);
-  
+  text-shadow: 0 0 20px rgba(89, 228, 243, 0.7),
+    0 0 50px rgba(89, 228, 243, 0.7), 0 0 110px rgba(89, 228, 243, 0.7);
 }

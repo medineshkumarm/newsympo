@@ -1,139 +1,106 @@
 import "../styles.css";
 import Navbar from "@/UI/NavBar";
 import Footer from "@/UI/Footer";
+
 export default function Botathon() {
   return (
     <>
       <Navbar />
-      {/* <div className="pt-10"></div> */}
-      <section className="w-full py-8 md:py-16 lg:py-20 bg-eve text-white">
-        <div className="container px-4 flex flex-col items-center gap-4 text-center md:gap-8 md:px-6">
-          <div className="space-y-4 md:space-y-6">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl neon font-bold tracking-tight">
-              BOT-A-THON: Automation Challenge
+      <section className="w-full py-12 md:py-16 lg:py-20 bg-eve text-white">
+        <div className="container px-6 flex flex-col items-center gap-6 text-center md:gap-10 md:px-8">
+          <div className="space-y-6 md:space-y-8">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight bg-gradient-to-r from-green-400 to-teal-300 bg-clip-text text-transparent">
+              Envision - Paper Presentation Competition
             </h1>
-            <p className="mx-auto max-w-[600px] text-gray-200 md:text-lg lg:text-xl xl:text-2xl dark:text-gray-400">
-              Join us in BOT-A-THON, an automation challenge where teams of three
-              participants will compete to solve real-world problems through
-              innovative automation solutions.
+            <p className="mx-auto max-w-[750px] text-gray-300 md:text-lg lg:text-xl xl:text-2xl">
+              Welcome to the Envision Paper Presentation Competition as part of
+              our symposium! This event encourages innovation, research, and
+              effective communication of ideas.
             </p>
           </div>
-          <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
-            <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8  bg-gradient-to-r from-green-800 to-teal-800 text-white">
-              <div className="space-y-4 text-left">
-                <h3 className="font-bold">Event Details</h3>
-                <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Prelims Date: 4th March,2024 (6pm - 7pm)
-                </p>
-                <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Finals Date: 9th March (8am - 11:30 am)
-                </p>
-                <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Venue: CSE Block-I AV Hall
-                </p>
-                <p className="text-sm text-gray-200 dark:text-gray-400">
-                  Team composition: Team of 3 members
-                </p>
+          <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10">
+            {["Event Details", "Competition Rounds", "Domains"].map((title, index) => (
+              <div key={index} className="mx-auto flex w-full items-center justify-center p-6 sm:p-10 bg-white/10 backdrop-blur-lg rounded-xl shadow-lg">
+                <div className="space-y-4 text-left">
+                  <h3 className="text-xl font-bold text-teal-300">{title}</h3>
+                  {index === 0 && (
+                    <>
+                      <p className="text-sm text-gray-200">Team Members: Maximum 4 members per team (Individual participation allowed).</p>
+                      <p className="text-sm text-gray-200">Event Date: 22nd February (Thursday).</p>
+                      <p className="text-sm text-gray-200">Event Mode:</p>
+                      <ul className="list-disc pl-6">
+                        <li>Round 1: Online selection of best papers.</li>
+                        <li>Round 2 (Final Round): Offline presentation on 22nd February.</li>
+                      </ul>
+                    </>
+                  )}
+                  {index === 1 && (
+                    <>
+                      <h4 className="font-semibold">Round 1: Online Selection</h4>
+                      <ul className="list-disc pl-6">
+                        <li>Participants submit papers online.</li>
+                        <li>Top 10 best papers are selected.</li>
+                        <li>Selected teams proceed to the final round.</li>
+                      </ul>
+                      <h4 className="font-semibold">Round 2: Final Round (Offline Presentation)</h4>
+                      <ul className="list-disc pl-6">
+                        <li>Selected teams present papers offline on 22nd February.</li>
+                        <li>10-minute presentation followed by a 5-minute Q&A session.</li>
+                        <li>Final evaluation based on judging criteria.</li>
+                      </ul>
+                    </>
+                  )}
+                  {index === 2 && (
+                    <ul className="list-disc pl-6">
+                      <li>Artificial Intelligence & Machine Learning (AI/ML)</li>
+                      <li>Cybersecurity & Ethical Hacking</li>
+                      <li>Blockchain & Cryptography</li>
+                      <li>Cloud Computing & Edge Computing</li>
+                      <li>Data Science & Big Data Analytics</li>
+                      <li>Internet of Things (IoT)</li>
+                    </ul>
+                  )}
+                </div>
               </div>
-            </div>
-            <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8  bg-gradient-to-r from-green-800 to-teal-800 text-white">
-              <div className="space-y-4 text-left">
-                <h3 className="font-bold">Round 1: Idea Summit(Online)</h3>
-                <ol className="list-decimal pl-6">
-                  <li>
-                    Each team must submit a real-world scenario-based problem
-                    statement in a domain of their own choice.
-                  </li>
-                  <li>
-                    Propose an automation solution for the submitted problem
-                    statement.
-                  </li>
-                  <li>
-                    Discuss the potential impact through a PPT Presentation and
-                    submit it via the provided submission link.
-                  </li>
-                </ol>
-              </div>
-            </div>
-            <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8 bg-gradient-to-r from-green-800 to-teal-800 text-white">
-              <div className="space-y-4 text-left">
-                <h3 className="font-bold">Round 2: Bot Expo(Offline)</h3>
-                <ol className="list-decimal pl-6">
-                  <li>Selected teams will showcase their bots.</li>
-                  <li>
-                    Demonstrate the implementation of their proposed automation
-                    solution.
-                  </li>
-                  <li>
-                    Participants will deploy their automation solutions and
-                    present them during the finals.
-                  </li>
-                  <li>
-                    Students should bring their own laptops with uipath studio
-                    installed
-                  </li>
-                </ol>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
-      <section className="w-full py-8 md:py-16 lg:py-20 bg-eve text-white">
-        <div className="container px-4">
-          <div className="space-y-6 prose prose-gray prose-lg dark:prose-dark">
-            <h2 className="text-2xl  md:text-3xl lg:text-4xl xl:text-6xl font-bold tracking-tight">
-              Judging Criteria
-            </h2>
-            <ol className="list-decimal pl-6">
-              <li>Uniqueness of the problem statement.</li>
-              <li>Scalability of the solution provided.</li>
-              <li>Feasibility.</li>
-              <li>Decision by the judge will be the final</li>
-            </ol>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-              Prizes & Awards
-            </h2>
+      <section className="w-full py-12 md:py-16 lg:py-20 bg-eve text-white">
+        <div className="container px-6">
+          <div className="space-y-8 prose prose-gray prose-lg">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-teal-300">Judging Criteria</h2>
+            <h4 className="font-semibold">Round 1:</h4>
             <ul className="list-disc pl-6">
-              <li>1st Prize: Rs.3000/-</li>
-              <li>2nd Prize: Rs.2000/-</li>
+              <li>Relevance to domain & problem statement.</li>
+              <li>Originality & research depth.</li>
+              <li>Clarity & structure of the paper.</li>
             </ul>
-            <p className="text-lg lg:text-xl xl:text-2xl">
-              E-certificates will be provided to all the participants.
-            </p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-              General Guidelines
-            </h2>
-            <ol className="list-decimal pl-6">
-              <li>
-                All participants must adhere to the college's code of conduct
-                and maintain professional behavior throughout the event.
-              </li>
-              <li>
-                Any changes in the rules or schedule will be communicated to the
-                participants in advance.
-              </li>
-            </ol>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-              Contact
-            </h2>
-            <p className="text-lg lg:text-xl xl:text-2xl">
-              For any inquiries or clarifications, please feel free to reach out
-              to our event coordinators:
-            </p>
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-[4rem]">
-              <ul className=" text-xl  pl-6">
-                <h1>
-                  <strong>Student Co-ordinators</strong>
-                </h1>
-                <li>Laxman R U - 9025542112</li>
-                <li>Rajkumar B - 9345813634</li>
+            <h4 className="font-semibold">Round 2:</h4>
+            <ul className="list-disc pl-6">
+              <li>Presentation Skills – Clarity, confidence, engagement.</li>
+              <li>Technical Accuracy – Correct methodologies & findings.</li>
+              <li>Q&A Handling – Effective response to questions.</li>
+            </ul>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-teal-300">Prizes & Awards</h2>
+            <ul className="list-disc pl-6">
+              <li>1st Prize: Rs. 3000/-</li>
+              <li>2nd Prize: Rs. 2000/-</li>
+              <li>Exciting prizes for top teams.</li>
+              <li>Certificates for participation & winners.</li>
+            </ul>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-teal-300">Contact</h2>
+            <p className="text-lg lg:text-xl">For inquiries, contact our coordinators:</p>
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
+              <ul className="text-lg pl-6">
+                <h1 className="text-xl font-bold">Coordinators</h1>
+                <li>Malathi B - 6382729546</li>
+                <li>Aparna V - 6380255945</li>
               </ul>
-              <ul className=" text-xl pl-6">
-                <h1>
-                  <strong>Staff Co-ordinators</strong>
-                </h1>
-                <li>Dr.S.Balaji - 9176982281</li>
-                <li>Dr.P.J.Sathish kumar - 9962723582</li>
+              <ul className="text-lg pl-6">
+                <h1 className="text-xl font-bold">Sub-Coordinators</h1>
+                <li>Prathiba D</li>
+                <li>Srividhya P</li>
               </ul>
             </div>
           </div>
