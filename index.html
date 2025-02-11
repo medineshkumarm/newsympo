@@ -1,26 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/img/pec-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="/img/pec-icon.png" /> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>XERONE-2K25 - Innovative Symposium | Technical and Non-Technical Events</title>
-  <meta name="description" content="Join XERONE-2K25 Symposium for exciting technical and non-technical events. Compete in BOTATHON, RED BREAK GREEN, E-SPORT, IPL AUCTION, and more. Win cash prizes!" />
-  <meta name="keywords" content="XERONE-2K25,xerone,XERONE,Panimalar Symposium Symposium, Technical Events, Non-Technical Events, BOTATHON, RED BREAK GREEN, E-SPORT, IPL AUCTION, Coding, Innovation" />
-  <meta name="author" content="Your Name" />
-  <meta property="og:title" content="XERONE-2K25 - Innovative Symposium | Technical and Non-Technical Events" />
-  <meta property="og:description" content="Join XERONE-2K25 Symposium for exciting technical and non-technical events. Compete in BOTATHON, RED BREAK GREEN, E-SPORT, IPL AUCTION, and more. Win cash prizes!" />
-  <meta property="og:image" content="/img/pec-icon.png" />
-  <meta property="og:url" content="https://xerone2K25.vercel.app" />
-  <meta property="og:type" content="website" />
+    <title>
+      XERONE-2K25 - Premier Symposium | Technical & Non-Technical Events
+    </title>
 
+    <!-- Meta Tags for SEO -->
+    <meta
+      name="description"
+      content="Join XERONE-2K25, a premier symposium featuring technical and non-technical events. Participate in BGMI Tournaments, Code RPG, IPL Mock Auction, and Paper Presentation. Win cash prizes and certificates! Register now."
+    />
+    <meta
+      name="keywords"
+      content="XERONE-2K25, symposium, Panimalar, technical events, BGMI Tournament, IPL Auction, coding competition, Code RPG, paper presentation, esports, innovation, hackathon"
+    />
+    <meta name="author" content="XERONE-2K25 Organizers" />
 
-</head>
+    <!-- Open Graph Meta Tags (For Social Media Sharing) -->
+    <meta
+      property="og:title"
+      content="XERONE-2K25 - Premier Symposium for Tech & Esports Enthusiasts"
+    />
+    <meta
+      property="og:description"
+      content="Compete in BGMI Tournaments, Code RPG, IPL Auction, and Paper Presentation at XERONE-2K25. Cash prizes, innovation, and thrilling competition await! Register now."
+    />
+    <meta
+      property="og:image"
+      content="https://xerone.vercel.app/img/banner.png"
+    />
+    <meta property="og:url" content="https://xerone.vercel.app" />
+    <meta property="og:type" content="website" />
 
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
-</body>
+    <!-- Twitter Meta Tags (For Twitter Card Display) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="XERONE-2K25 - Join the Ultimate Symposium"
+    />
+    <meta
+      name="twitter:description"
+      content="Participate in thrilling esports, coding battles, and technical events. Win prizes at XERONE-2K25!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://xerone.vercel.app/img/banner.png"
+    />
 
+    <!-- Schema Markup (Structured Data for Google) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "XERONE-2K25 Symposium",
+        "startDate": "2025-02-18",
+        "endDate": "2025-02-22",
+        "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": {
+          "@type": "Place",
+          "name": "Panimalar Engineering College",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Chennai, Tamil Nadu",
+            "addressLocality": "Chennai",
+            "addressRegion": "TN",
+            "postalCode": "600123",
+            "addressCountry": "IN"
+          }
+        },
+        "description": "XERONE-2K25 features competitive events like BGMI Tournaments, Code RPG, IPL Auction, and technical paper presentations.",
+        "image": "https://xerone.vercel.app/img/banner.png",
+        "organizer": {
+          "@type": "Organization",
+          "name": "Panimalar Engineering College",
+          "url": "https://xerone.vercel.app"
+        }
+      }
+    </script>
+
+    <!-- Preload Key Assets for Performance -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://xerone.vercel.app/img/banner.png"
+    />
+    <link rel="preload" as="script" href="/src/main.tsx" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- Load Main App -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

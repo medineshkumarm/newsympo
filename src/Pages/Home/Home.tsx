@@ -109,7 +109,7 @@ const CountDown = () => {
   };
   
   return (
-    <div className="w-full max-w-4xl mx-auto flex items-center text-white">
+    <div className="w-full max-w-4xl mx-auto flex items-center text-white -my-12 lg:my-12">
       <CountdownItem num={remaining.days} text="days" />
       <CountdownItem num={remaining.hours} text="hours" />
       <CountdownItem num={remaining.minutes} text="minutes" />

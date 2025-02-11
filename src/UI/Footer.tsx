@@ -28,6 +28,7 @@ const Footer = () => {
             <div className="">
               <LinkGroup header="Faculty Coordinators">
                 <NavLink label="Mrs.S.T.SANTHANALAKSHMI - 8939275959" />
+                <NavLink label="Dr.S.BALAJI - 9176982281" />
               </LinkGroup>
 
               {/* Student Committee */}
