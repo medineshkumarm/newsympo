@@ -77,6 +77,25 @@ export default function Botathon() {
       <section className="w-full py-12 md:py-16 lg:py-20 bg-eve text-white">
         <div className="container px-6">
           <div className="space-y-8 prose prose-gray prose-lg">
+
+            {/* basic rules */}
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-teal-300">Basic Rules for the Event </h2>
+            <h6>✅ The paper must be original and relevant to the chosen domain and problem statement.</h6>
+            <h6>✅ The paper should follow this format.</h6>
+            {/* sub-points */}
+            <ul className="list-decimal pl-10 indent-5">
+              <li>Title of the Paper</li>
+              <li>Abstract</li>
+              <li>Existing Idea</li>
+              <li>Proposed Idea</li>
+              <li>Conclusion Idea</li>
+            </ul>
+            <div>
+              <h6 className="font-semibold text-red-500">Note:</h6>
+              <p className="indent-5">A plagiarism report must be attached along with the submission.</p>
+
+            </div>
+            {/* JC */}
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-teal-300">Judging Criteria</h2>
             <h4 className="font-semibold">Round 1:</h4>
             <ul className="list-disc pl-6">
