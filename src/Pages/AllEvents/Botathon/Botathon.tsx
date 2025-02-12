@@ -52,12 +52,20 @@ export default function Botathon() {
                   )}
                   {index === 2 && (
                     <ul className="list-disc pl-6">
-                      <li>Artificial Intelligence & Machine Learning (AI/ML)</li>
+                      {/* <li>Artificial Intelligence & Machine Learning (AI/ML)</li>
                       <li>Cybersecurity & Ethical Hacking</li>
                       <li>Blockchain & Cryptography</li>
                       <li>Cloud Computing & Edge Computing</li>
                       <li>Data Science & Big Data Analytics</li>
-                      <li>Internet of Things (IoT)</li>
+                      <li>Internet of Things (IoT)</li> */}
+
+                      <li>Network security</li>
+                      <li>Ethical hacking and Penetration</li>
+                      <li>Cyber threat Intelligence</li>
+                      <li>Darkweb and cybercrime investigation</li>
+                      <li>Cryptography and steganography</li>
+                      <li>AI & ML in Cybersecurity</li>
+                      <li>Cloud Security</li>
                     </ul>
                   )}
                 </div>
@@ -86,8 +94,8 @@ export default function Botathon() {
             <ul className="list-disc pl-6">
               <li>1st Prize: Rs. 3000/-</li>
               <li>2nd Prize: Rs. 2000/-</li>
-              <li>Exciting prizes for top teams.</li>
-              <li>Certificates for participation & winners.</li>
+              {/* <li>Exciting prizes for top teams.</li> */}
+              <li>Certificates for participants will be provided.</li>
             </ul>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-teal-300">Contact</h2>
             <p className="text-lg lg:text-xl">For inquiries, contact our coordinators:</p>

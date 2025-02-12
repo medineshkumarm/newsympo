@@ -23,13 +23,12 @@ function Home() {
 }
 
 export default Home;
-
 function BG2() {
   return (
-    <div className="relative h-screen pt-2">
-      {/* Video Background */}
+    <div className="relative flex flex-col h-screen">
+      {/* Video Background (Desktop) */}
       <video
-        className="w-full h-5/6 object-cover absolute top-0 left-0 hidden sm:block" // Hidden on mobile
+        className="w-full h-5/6 object-cover hidden sm:block" // Hidden on mobile
         autoPlay
         muted
         loop
@@ -39,31 +38,28 @@ function BG2() {
 
       {/* Mobile Video Background */}
       <video
-        className="w-full h-[69.5%] object-fit absolute top-0 left-0 block sm:hidden -mt-1" // Displayed only on mobile
+        className="w-full h-4/6 object-fit block sm:hidden" // Visible only on mobile
         autoPlay
-        controls={false}
         muted
         loop
-        playsInline // For autoplay on mobile
+        playsInline
       >
         <source src={vid1} type="video/mp4" />
       </video>
 
-      {/* Overlay Content */}
-      <div className="absolute p-6 inset-0 flex flex-col items-center text-white blurit my-16">
-        <div className="my-[40rem] -mb-8 sm:-mb-4  w-full  ">
-          {/* Move Countdown to the bottom */}
-          <CountDown />
-        </div>
+      {/* Countdown Below Video */}
+      <div className="w-full flex justify-center py-5 my-4">
+        <CountDown />
       </div>
 
-      {/* Navbar */}
+      {/* Navbar (Fixed) */}
       <div className="fixed top-0 w-full z-50">
         <Navbar />
       </div>
     </div>
   );
 }
+
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
@@ -94,12 +90,12 @@ const CountDown = () => {
     const end = new Date(COUNTDOWN_FROM); // Ensure a valid format
     const now = new Date();
     const distance = end.getTime() - now.getTime();
-  
+
     if (distance < 0) {
       setRemaining({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       return;
     }
-  
+
     setRemaining({
       days: Math.floor(distance / DAY),
       hours: Math.floor((distance % DAY) / HOUR),
@@ -107,13 +103,13 @@ const CountDown = () => {
       seconds: Math.floor((distance % MINUTE) / SECOND),
     });
   };
-  
+
   return (
-    <div className="w-full max-w-4xl mx-auto flex items-center text-white -my-12 lg:my-24 ">
+    <div className="w-full max-w-4xl mx-auto flex items-center text-white ">
       <CountdownItem num={remaining.days} text="days" />
       <CountdownItem num={remaining.hours} text="hours" />
       <CountdownItem num={remaining.minutes} text="minutes" />
-      <CountdownItem num={remaining.seconds} text="seconds"  />
+      <CountdownItem num={remaining.seconds} text="seconds" />
     </div>
   );
 };
