@@ -90,11 +90,13 @@ export default function Botathon() {
               <li>Proposed Idea</li>
               <li>Conclusion Idea</li>
             </ul>
-            <div>
+            <h6>✅A plagiarism report must be attached along with the submission.</h6>
+
+            {/* <div>
               <h6 className="font-semibold text-red-500">Note:</h6>
               <p className="indent-5">A plagiarism report must be attached along with the submission.</p>
 
-            </div>
+            </div> */}
             {/* JC */}
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-teal-300">Judging Criteria</h2>
             <h4 className="font-semibold">Round 1:</h4>
