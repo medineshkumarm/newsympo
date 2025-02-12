@@ -29,7 +29,10 @@ const SingleCard: React.FC<SingleCardProps> = ({
       <h3 className="text-2xl font-semibold mb-4 p-8 text-center text-white bg-primary dark:bg-dark-2">
         {CardTitle}
       </h3>
-      <img src={image} alt="" className="w-3/4 mx-auto rounded-[18px]" />
+      <a href={btnHref || "#"}>
+        <img src={image} alt="" className="w-3/4 mx-auto rounded-[18px]" />
+
+      </a>
       <div className="p-8 text-center sm:p-9 md:p-7 xl:p-9">
         <p className="mb-7 sm:text-xs md:text-xl  text-body-color dark:text-dark-6">
           {CardDescription}

@@ -1,6 +1,7 @@
 // Reusable Table Component
 import Navbar from "@/UI/NavBar";
 import Footer from "@/UI/Footer";
+import { Link } from "react-router-dom";
 // Define the type for an event
 type Event = {
   name: string;
@@ -23,7 +24,7 @@ const ScheduleTable: React.FC<ScheduleTableProps> = ({ events }) => (
           <span className="font-bold text-xl">Event</span>
         </div>
         <div className="flex w-full items-center justify-center p-4 sm:p-8 border-r-[.1px]">
-          <span className="font-bold text-xl">Prelims</span>
+          <span className="font-bold text-xl">Prelims (Online)</span>
         </div>
         <div className="flex w-full items-center justify-center p-4 sm:p-8 border-r-[.1px]">
           <span className="font-bold text-xl">Finals</span>
@@ -143,6 +144,31 @@ export default function About() {
               <Schedule />
             </div>
           </div>
+        </div>
+
+        <div className="grid grid-cols-1  sm:grid-cols-1 m-0 p-0">
+          <section className="w-full pb-24">
+            <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
+              <div className="space-y-3">
+                <h2 className=" neon text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  Register
+                </h2>
+                <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                  Hurry up! Event closes on Feb 16th, 2025 at 12pm. Reserve your
+                  spot at the symposium! Register now.
+                </p>
+              </div>
+              <div className="flex justify-center gap-4 md:gap-6">
+                <Link
+                  className="inline-flex h-10 items-center justify-center rounded-[8px] border border-gray-200 bg-white text-black px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-900 hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+                  to="https://docs.google.com/forms/d/1AbraNRR2x8-QYULluq9lxsc4mNMOOMPdd94Q9GEsPZE/viewform?edit_requested=true"
+                  target="_blank"
+                >
+                  Register Now
+                </Link>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
       <Footer />

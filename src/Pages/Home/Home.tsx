@@ -50,7 +50,7 @@ function BG2() {
       </video>
 
       {/* Overlay Content */}
-      <div className="absolute p-6 inset-0 flex flex-col items-center text-white blurit">
+      <div className="absolute p-6 inset-0 flex flex-col items-center text-white blurit my-16">
         <div className="my-[40rem] -mb-8 sm:-mb-4  w-full  ">
           {/* Move Countdown to the bottom */}
           <CountDown />
@@ -109,7 +109,7 @@ const CountDown = () => {
   };
   
   return (
-    <div className="w-full max-w-4xl mx-auto flex items-center text-white -my-12 lg:my-12">
+    <div className="w-full max-w-4xl mx-auto flex items-center text-white -my-12 lg:my-24 ">
       <CountdownItem num={remaining.days} text="days" />
       <CountdownItem num={remaining.hours} text="hours" />
       <CountdownItem num={remaining.minutes} text="minutes" />
